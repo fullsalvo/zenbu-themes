@@ -1,0 +1,6 @@
+term_fonts:
+  - "Lemon"
+  - "Kochi Gothic"
+antialias: "false"
+pixelsize: 8
+spacing: 1
