@@ -1,32 +1,59 @@
 # Colors
 colors:
-  background:    "#e4e4ec"
-  foreground:    "#463706"
-  cursor:        "#463706"
+  # background:    "#e4e4ec"
+  # foreground:    "#463706"
+  # cursor:        "#463706"
+  # black:
+  #   normal:     "#4b4b5e"
+  #   bold:       "#292a3a"
+  # red:
+  #   normal:     "#753838"
+  #   bold:       "#722626"
+  # green:
+  #   normal:     "#464832"
+  #   bold:       "#3b3f1a"
+  # yellow:
+  #   normal:     "#d0c54e"
+  #   bold:       "#b0b32e"
+  # blue:
+  #   normal:     "#59656f"
+  #   bold:       "#2d5271"
+  # magenta:
+  #   normal:     "#594561"
+  #   bold:       "#48314f"
+  # cyan:
+  #   normal:     "#426d70"
+  #   bold:       "#22474c"
+  # white:
+  #   normal:     "#afc3c3"
+  #   bold:       "#8aa2a3"
+  background:     "#F1F2E0"
+  foreground:     "#695F6C"
+  cursor:         "#695F6C"
   black:
-    normal:     "#4b4b5e"
-    bold:       "#292a3a"
+    normal:       "#695F6C"
+    bold:         "#A5B9C4"
   red:
-    normal:     "#753838"
-    bold:       "#722626"
+    normal:       "#A75D4d"
+    bold:         "#A75D4d"
   green:
-    normal:     "#464832"
-    bold:       "#3b3f1a"
+    normal:       "#A4D485"
+    bold:         "#A4D485"
   yellow:
-    normal:     "#d0c54e"
-    bold:       "#b0b32e"
+    normal:       "#FDD485"
+    bold:         "#FDD485"
   blue:
-    normal:     "#59656f"
-    bold:       "#2d5271"
+    normal:       "#90AABE"
+    bold:         "#90AABE"
   magenta:
-    normal:     "#594561"
-    bold:       "#48314f"
+    normal:       "#B17FBC"
+    bold:         "#B17FBC"
   cyan:
-    normal:     "#426d70"
-    bold:       "#22474c"
+    normal:       "#6BD6E3"
+    bold:         "#6BD6E3"
   white:
-    normal:     "#afc3c3"
-    bold:       "#8aa2a3"
+    normal:       "#A5B9C4"
+    bold:         "#F1F2E0"
 
 # Window Manager
 

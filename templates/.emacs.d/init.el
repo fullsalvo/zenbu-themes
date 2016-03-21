@@ -104,6 +104,7 @@
 ;;(initial-buffer-choice nil)
 
 (global-set-key (kbd "C-x c") 'toggle-comment-on-line)
+(global-set-key (kbd "C-c c") 'comment-or-uncomment-region)
 (show-paren-mode t)
 (setq-default word-wrap t)
 (setq-default python-indent-offset 4)
