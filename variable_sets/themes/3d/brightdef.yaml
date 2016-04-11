@@ -27,6 +27,8 @@ colors:
   # white:
   #   normal:     "#afc3c3"
   #   bold:       "#8aa2a3"
+  primary:        "red"
+  secondary:      "cyan"
   background:     "#F1F2E0"
   foreground:     "#695F6C"
   cursor:         "#695F6C"
@@ -62,4 +64,4 @@ wallpaper:      "/home/fullsalvo/Pictures/Walls/BeachSand.jpg"
 border:         "#4e3d07"
 unfocused:      "#a2a2a2"
 
-prompt:         "BLACK"
+prompt:         "black"

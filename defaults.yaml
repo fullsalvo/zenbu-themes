@@ -1,6 +1,8 @@
 # Fonts
 term_fonts:
-  - "Leggie"
+  #  - "Leggie"
+  #  - "Profont"
+  - "fxd"
   - "JackeyFont"
 antialias: "true"
 pixelsize: 11
@@ -11,7 +13,7 @@ name:           "fullsalvo"
 
 colors:
   primary:      "blue"
-  secondary:    "white"
+  secondary:    "red"
   background:   "#2e2e2e"
   foreground:   "#eeeeee"
   cursor:       "#eeeeee"
@@ -44,7 +46,7 @@ colors:
 
 barback:        "#00000055"
 warning:        "#e84f4f"
-border:         "#9eb2cb"
+border:         "#71899d"
 bartext:        "#eeeeee"
 unfocused:      "#5c5c5c"
 dectext:        "#ffffff"
@@ -56,15 +58,15 @@ outer:          "0"
 # Floats
 floating: false
 shadows:        "false"
-shadopac:       "0.15"
+shadopac:       "0.05"
 
 bordersize:     "3"
 mainfont:       "leggie 9"
-barfont:        "Chivo 8"
+barfont:        "bitbuntu 6"
 # Roboto is still a nice bar font
 barheight:      "18"
 
-wallpaper:      "/home/fullsalvo/Pictures/Walls/Buds.jpg"
+wallpaper:      "/home/fullsalvo/Pictures/Walls/WindowRain.jpg"
 wallmode:       "--bg-fill"
 
 # Utility
@@ -114,12 +116,15 @@ ncmpcpp_secondary_n:  "{` {{ colornumbers }}[{{ colors }}['secondary']] + 1 `}"
 
 startpage:        "{` {{ colors }}[{{ colors }}['primary']]['normal'] `}"
 tmux:             "{` {{ colornumbers }}[{{ colors }}['primary']] `}"
-prompt:           "BLUE"
+prompt:           "blue"
 
 # Emacs
 
-emacsfont:      "Leggie"
+#emacsfont:      "Leggie"
+#emacsfont:      "Profont"
+emacsfont:      "fxd"
 emacsheight:    "80"
+
 
 # Irssi
 irssi_colors:

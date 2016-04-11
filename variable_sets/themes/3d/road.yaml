@@ -1,0 +1,30 @@
+name:           "OnTheRoadAgain"
+colors:
+  primary:      "red"
+  secondary:    "blue"
+  background:   "#181a13"
+  red:
+    normal:     "#aa7b4f"
+    bold:       "#dc9f66"
+  green:
+    normal:     "#a99770"
+    bold:       "#dbc391"
+  yellow:
+    normal:     "#a88d5f"
+    bold:       "#e0b974"
+  blue:
+    normal:     "#8c97ac"
+    bold:       "#b4c2de"
+  magenta:
+    normal:     "#a7a498"
+    bold:       "#d9d5c5"
+  cyan:
+    normal:     "#c1c2c4"
+    bold:       "#f2f3f6"
+  white:
+    normal:     "#c7bbb4"
+    bold:       "#f9e9e1"
+
+wallpaper:      "/home/fullsalvo/Pictures/Walls/OnTheRoadAgain.jpg"
+bordersize:     "2"
+border:         "#a99770"

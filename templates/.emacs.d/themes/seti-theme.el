@@ -17,7 +17,7 @@
       (background   "{{ bgc }}")
       (background-2 "{{ n_black }}")
       (background-3 "{{ n_white }}")
-      (background-4 "#101112")
+      (background-4 "#1f1f1f")
       (text "{{ fgc }}")
       (text-2 "#858D8A")
       (text-3 "#41535B")
@@ -43,10 +43,10 @@
 
    `(isearch ((t (:background ,background :foreground ,text :box (:line-width 1 :color ,dark-blue) :weight bold))))
    `(lazy-highlight ((t (:background ,background :foreground ,text-2 :box (:line-width 1 :color ,dark-blue)))))
-   `(mode-line ((t (:foreground ,text-4 :background ,background-3 :underline (:color ,text-4 :style line)))))
-   `(mode-line-buffer-id ((t (:weight normal :foreground ,{{ text_primary }}))))
+   `(mode-line ((t (:foreground ,text :background ,background :overline ,text :underline (:color ,text :style line)))))
+   `(mode-line-buffer-id ((t (:weight normal :foreground ,text))))
    `(mode-line-emphasis ((t (:weight bold))))
-   `(mode-line-highlight ((t (:box (:line-width 1 :color ,dark-blue)))))
+   `(mode-line-highlight ((t (:box (:line-width 1 :color ,text)))))
    `(mode-line-inactive ((t (:weight light :foreground ,text :background ,background-2))))
    `(secondary-selection ((t (:background ,background-2))))
    `(trailing-whitespace ((t (:background ,background-3))))
@@ -74,9 +74,13 @@
    ;; Fullsalvo Font Locks
    ;;LaTeX
    `(font-latex-math-face ((t (:foreground ,magenta))))
-   `(font-latex-sectioning-1-face ((t (:inherit font-latex-sectioning-2-face :height 1.1 :family "Terminus"))))
-   `(font-latex-sectioning-2-face ((t (:inherit font-latex-sectioning-3-face :foreground "#FFFFFF" :height 1.1 :family "Terminus"))))
-   `(font-latex-sectioning-3-face ((t (:inherit font-latex-sectioning-4-face :foreground "turquoise2" :height 1.1))))
+   `(font-latex-sectioning-1-face ((t (:family "Leggie" :height 80))))
+   `(font-latex-sectioning-2-face ((t (:family "Leggie" :height 80))))
+   `(font-latex-sectioning-3-face ((t (:family "Leggie" :height 80))))
+   `(font-latex-sectioning-4-face ((t (:family "Leggie" :height 80))))
+   `(font-latex-sectioning-5-face ((t (:family "Leggie" :height 80))))
+   `(font-latex-warning-face ((t (:foreground "#FF0000"))))
+
    ;;Shell
    `(sh-quoted-exec ((t (:foreground ,red))))
    `(sh-heredoc ((t (:foreground ,yellow))))
@@ -99,7 +103,7 @@
    `(linum ((t (:foreground ,text-4  :weight light :height 0.9))))
    `(fringe ((t (:background ,background-3 :foreground ,text-4))))
    `(left-margin ((t (nil))))
-   `(hl-line ((t (:background ,background-4)))))
+   `(hl-line ((t (:background , background-4)))))
 
 
 (custom-theme-set-variables

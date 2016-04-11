@@ -45,7 +45,7 @@ discard_colors_if_item_is_selected    = "yes"
 ############################################################
 #                      Formatting                          #
 ############################################################
-song_list_format                      = "{${{ ncmpcpp_secondary_n }}%4l}$1 | {${{ ncmpcpp_primary_n }}%a}$1 - {${{ ncmpcpp_secondary_n }}%t}"
+song_list_format                      = "{${{ ncmpcpp_secondary_n }}%4l}$1 │ {${{ ncmpcpp_primary_n }}%a}$1 - {${{ ncmpcpp_secondary_n }}%t}"
 song_columns_list_format              = "(22)[{{ text_primary }}]{ar} (39)[{{ text_primary }}]{t|f} (25)[{{ text_primary }}]{b} (7f)[{{ text_secondary }}]{lr}"
 song_window_title_format              = "{%a - %t}"
 song_library_format                   = "%t"
