@@ -246,7 +246,7 @@
 
 #urlbar {
     color: {{ b_white }}!important;
-    text-align: center !important;
+    text-align: left !important;
     border-radius: 0px !important;
     border: none !important;
     margin: 0 0 0 0 !important;
