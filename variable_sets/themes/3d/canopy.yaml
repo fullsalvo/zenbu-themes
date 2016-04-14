@@ -1,0 +1,30 @@
+name:           "Canopy"
+colors:
+  primary:      "yellow"
+  secondary:    "blue"
+  background:   "#383d36"
+  red:
+    normal:     "#ac8565"
+    bold:       "#deab82"
+  green:
+    normal:     "#93aa7a"
+    bold:       "#bedc9d"
+  yellow:
+    normal:     "#aa9875"
+    bold:       "#dcc497"
+  blue:
+    normal:     "#c2b493"
+    bold:       "#f4e2b8"
+  magenta:
+    normal:     "#a9a67f"
+    bold:       "#dbd7a4"
+  cyan:
+    normal:     "#a2a890"
+    bold:       "#d2daba"
+  white:
+    normal:     "#d0c8bb"
+    bold:       "#fbf1e2"
+
+wallpaper:      "/home/fullsalvo/Pictures/Walls/CanopyBed.jpg"
+border:         "{` {{ colors }}['red']['normal'] `}"
+unfocused:      "{` {{ colors }}['blue']['normal'] `}"

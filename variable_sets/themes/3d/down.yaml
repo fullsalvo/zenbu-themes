@@ -1,7 +1,7 @@
 name:           "Down"
 colors:
   primary:      "cyan"
-  secondary:    "red"
+  secondary:    "yellow"
   background:   "#1a2c2c"
   red:
     normal:     "#ab7253"
@@ -24,4 +24,7 @@ colors:
 
 wallpaper:      "/home/fullsalvo/Pictures/Walls/Down.jpg"
 border:         "{`{{ colors }}['cyan']['normal'] `}"
-unfocused:        "{`{{ colors }}['yellow']['normal'] `}"
+unfocused:      "{`{{ colors }}['yellow']['normal'] `}"
+
+mainfont:       "Leggie 16"
+winfmt:         " "

@@ -51,9 +51,9 @@ bartext:        "#eeeeee"
 unfocused:      "#5c5c5c"
 dectext:        "#ffffff"
 rofibg:         "#222222"
-inner:          "0"
+inner:          "4"
 # Formerly 18
-outer:          "8"
+outer:          "4"
 
 # Floats
 floating: false
@@ -65,6 +65,7 @@ mainfont:       "leggie 9"
 barfont:        "bitbuntu 6"
 # Roboto is still a nice bar font
 barheight:      "18"
+winfmt:         " %class"
 
 wallpaper:      "/home/fullsalvo/Pictures/Walls/WindowRain.jpg"
 wallmode:       "--bg-fill"

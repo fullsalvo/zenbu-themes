@@ -226,7 +226,7 @@ client.urgent           $dectext $dectext $dectext  $dectext
 {{ #floating }}
 for_window [class=".*"] floating enable
 for_window [class=".*"] border normal $bordersize
-for_window [class=".*"] title_format " %class"
+for_window [class=".*"] title_format "{{ winfmt }}"
 {{ /floating }}
 {{ ^floating }}
 for_window [class=".*"] border pixel $bordersize
