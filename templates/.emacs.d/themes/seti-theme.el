@@ -20,7 +20,7 @@
       (background-4 "#1f1f1f")
       (text "{{ fgc }}")
       (text-2 "#858D8A")
-      (text-3 "#41535B")
+      (text-3 "{{ n_black }}")
       (text-4 "#2F3C42")
       (text-highlight "#FFFFFF")
       (text-region "#434546")
@@ -100,7 +100,7 @@
    `(dired-warning ((t (:inherit (font-lock-warning-face)))))
 
    ;; Lines
-   `(linum ((t (:foreground ,text-4  :weight light :height 0.9))))
+   `(linum ((t (:foreground ,text-3  :weight light :height 0.9))))
    `(fringe ((t (:background ,background-3 :foreground ,text-4))))
    `(left-margin ((t (nil))))
    `(hl-line ((t (:background , background-4)))))

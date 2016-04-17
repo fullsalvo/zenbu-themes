@@ -2,6 +2,6 @@ term_fonts:
   - "cure"
   - "Kochi Gothic"
 pixelsize: 11
-spacing: -1
+spacing: 0
 
 emacsfont: "cure"

@@ -31,10 +31,10 @@ emacs.internalBorder: 0
 *url-select.underline:	 true
 
 ! Colors
-*borderColor:  {{ bgc }}
-*background:   {{ bgc }}
-*foreground:   {{ fgc }}
-*cursorColor:  {{ csc }}
+*.borderColor:  {{ bgc }}
+*.background:   {{ bgc }}
+*.foreground:   {{ fgc }}
+*.cursorColor:  {{ csc }}
 
 ! Black
 *color0:       {{ n_black }}

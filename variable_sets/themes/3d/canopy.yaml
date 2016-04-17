@@ -3,6 +3,9 @@ colors:
   primary:      "yellow"
   secondary:    "blue"
   background:   "#383d36"
+  black:
+    normal:     "#636363"
+    bold:       "#828282"
   red:
     normal:     "#ac8565"
     bold:       "#deab82"
@@ -28,3 +31,6 @@ colors:
 wallpaper:      "/home/fullsalvo/Pictures/Walls/CanopyBed.jpg"
 border:         "{` {{ colors }}['red']['normal'] `}"
 unfocused:      "{` {{ colors }}['blue']['normal'] `}"
+
+mainfont:       "Leggie 16"
+winfmt:         " "

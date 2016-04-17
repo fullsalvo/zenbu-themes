@@ -74,7 +74,7 @@ font pango: $font
 #                          Application Bindings                       #
 #######################################################################
 
-bindsym $mod+Return exec --no-startup-id urxvt
+bindsym $mod+Return exec --no-startup-id urxvt -e tmux
 bindsym $mod+Shift+f exec --no-startup-id firefox
 bindsym $mod+Shift+s exec --no-startup-id spotify
 bindsym $mod+Shift+a exec --no-startup-id emacs
@@ -85,7 +85,7 @@ bindsym $mod+Shift+P exec --no-startup-id feh -.Z  -Y -z -g 938x506 -D 180 -B bl
 bindsym $mod+Shift+T exec --no-startup-id libreoffice
 # Floating Instances
 for_window [instance="__special__"] floating enable
-bindsym $mod+Shift+Return exec --no-startup-id urxvt -name __special__
+bindsym $mod+Shift+Return exec --no-startup-id urxvt -name __special__ -e tmux
 bindsym $mod+Shift+M exec --no-startup-id urxvt -name __special__ -e ncmpcpp
 bindsym $mod+Shift+N exec --no-startup-id urxvt -name __special__ -e ranger
 # Launcher

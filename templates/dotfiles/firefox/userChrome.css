@@ -149,6 +149,11 @@
     margin-right: 0px !important;
 }
 
+.tabbrowser-tab > .tab-stack > .tab-content[pinned][titlechanged]:not([visuallyselected="true"]) {
+	background-image: none !important;
+	background-color: {{ b_black }} !important;
+}
+
 /* #TabsToolbar { */
 /*     background: transparent !important; */
 /*     margin-bottom: 0 !important; */
