@@ -1,0 +1,8 @@
+b_black:         "{` {{ colors }}['black']['normal'] `}"
+b_red:           "{` {{ colors }}['red']['normal'] `}"
+b_green:         "{` {{ colors }}['green']['normal'] `}"
+b_yellow:        "{` {{ colors }}['yellow']['normal'] `}"
+b_blue:          "{` {{ colors }}['blue']['normal'] `}"
+b_magenta:       "{` {{ colors }}['magenta']['normal'] `}"
+b_cyan:          "{` {{ colors }}['cyan']['normal'] `}"
+b_white:         "{` {{ colors }}['white']['normal'] `}"

@@ -236,8 +236,8 @@ formats = {
 	# %Z303030({nickhost %k$1}%Z303030)%n";
     quit_once = "{channel $3} {channick $0} {chanhost $1} %kquit {reason %C$2}";
 
-    nick_changed = "%k{channick $[-13]0} %G>%n {channick $1}";
-    your_nick_changed = "%k          you %G>%n {channick $1}";
+    nick_changed = "{channick $[-13]0} %G>%n {channick $1}";
+    your_nick_changed = "          you %G>%n {channick $1}";
 
     pubmsg = "{pubmsgnick $2 {pubnick $[-11]0}}$1";
 
