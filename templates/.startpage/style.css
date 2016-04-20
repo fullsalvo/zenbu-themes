@@ -14,31 +14,65 @@ a:hover {
 	text-decoration: none !important;
 }
 
-div.books {
-	margin-left: 30%;
-	text-align: left;
-	padding-left: 0px;
+li {
+	list-style: none;
+}
 
-	font-family: fxd;
+ul {
+	text-align: left !important;
+	padding-left: 13px !important;
+}
+
+ul li {
+	list-style: none;
+	display: inline;
+	text-align: left;
+}
+
+ul li:after {
+	color: {{ n_red }} !important;
+	content: " //" !important;
+}
+
+ul li:last-child:after {
+	content: "" !important;
+}
+
+div.books {
+	margin-left: 30% !important;
+	text-align: left !important;
+	padding-left: 0px;
+	display: table;
+
+	font-family: {{ emacsfont }};
 	font-weight: 300;
 	font-size: 0.75em;
 
-	position: fixed;
+	position: absolute;
 	left: 0px;
 	top: 30%;
 }
 
 div.books2 {
-	margin-right: 70%;
-	text-align: right;
-	padding-right: 15px;
+	margin-right: 70% !important;
+	text-align: right !important;
 	color: {{ fgc }};
+	float: right;
+	display: table;
 
-	font-family: fxd;
+	font-family: {{ emacsfont }};
 	font-weight: 300;
 	font-size: 0.75em;
 
-	position: fixed;
+	position: absolute;
 	right: 0px;
 	top: 30%;
+}
+
+ul li#books2 {
+	float: right !important;
+}
+
+ul li#books2:after {
+	content: "" !important;
 }

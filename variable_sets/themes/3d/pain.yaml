@@ -1,0 +1,25 @@
+name:           "Pain"
+colors:
+  primary:      "red"
+  secondary:    "blue"
+  red:
+    normal:     "#c5bb83"
+    bold:       "#f7eaa4"
+  green:
+    normal:     "#c4c4b3"
+    bold:       "#f6f6e0"
+  yellow:
+    normal:     "#a3a672"
+    bold:       "#d4d894"
+  blue:
+    normal:     "#a0a995"
+    bold:       "#cfdbc1"
+  magenta:
+    normal:     "#8baa89"
+    bold:       "#b3dcb1"
+  cyan:
+    normal:     "#91a8a1"
+    bold:       "#bcdad0"
+
+wallpaper:      "/home/fullsalvo/Pictures/Walls/Pain.jpg"
+wallmode:       "--bg-scale"
