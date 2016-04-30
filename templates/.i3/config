@@ -74,7 +74,7 @@ font pango: $font
 #                          Application Bindings                       #
 #######################################################################
 
-bindsym $mod+Return exec --no-startup-id urxvt -e tmux
+bindsym $mod+Return exec --no-startup-id urxvt
 bindsym $mod+Shift+f exec --no-startup-id firefox
 bindsym $mod+Shift+s exec --no-startup-id spotify
 bindsym $mod+Shift+a exec --no-startup-id emacs
@@ -85,7 +85,7 @@ bindsym $mod+Shift+P exec --no-startup-id feh -.Z  -Y -z -g 938x506 -D 180 -B bl
 bindsym $mod+Shift+T exec --no-startup-id libreoffice
 # Floating Instances
 for_window [instance="__special__"] floating enable
-bindsym $mod+Shift+Return exec --no-startup-id urxvt -name __special__ -e tmux
+bindsym $mod+Shift+Return exec --no-startup-id urxvt -name __special__
 bindsym $mod+Shift+M exec --no-startup-id urxvt -name __special__ -e ncmpcpp
 bindsym $mod+Shift+N exec --no-startup-id urxvt -name __special__ -e ranger
 # Launcher
@@ -106,8 +106,6 @@ bindsym $win+Shift+Return exec --no-startup-id x-terminal-emulator
 exec --no-startup-id nm-applet
 exec --no-startup-id pulseaudio
 exec --no-startup-id gnome-settings-daemon
-exec --no-startup-id mpd
-exec --no-startup-id mpdscribble
 exec --no-startup-id compton
 exec --no-startup-id dunst
 exec_always --no-startup-id $wallprog $walltype $wall

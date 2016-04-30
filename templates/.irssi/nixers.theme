@@ -225,15 +225,10 @@ formats = {
     line_start = "{line_start}";
     line_start_irssi = "{line_start}";
 
-    join = "         join %g>%n {channick $0} %n";
-	# %Z303030({nickhost %k$1}%Z303030)%n";
-    part = "         part %r<%n {channick $0} %n";
-	# %Z303030({nickhost %k$1}%Z303030)%n";
-    kick = "       kicked %r<%n {channick $0} %n";
-	# %Z303030({nickhost %k$1}%Z303030)%n";
-    quit = "         quit %r<%n {channick $0} %n";
-	# %k{reason %k$2}%n";
-	# %Z303030({nickhost %k$1}%Z303030)%n";
+    join = "         join %g>%n {channick $0} %k({nickhost %k$1}%k)%n";
+    part = "         part %r<%n {channick $0} %k({nickhost %k$1}%k)%n";
+    kick = "       kicked %r<%n {channick $0} %k({nickhost %k$1}%k)%n";
+    quit = "         quit %r<%n {channick $0} %k({nickhost %k$1}%k)%n";
     quit_once = "{channel $3} {channick $0} {chanhost $1} %kquit {reason %C$2}";
 
     nick_changed = "{channick $[-13]0} %G>%n {channick $1}";

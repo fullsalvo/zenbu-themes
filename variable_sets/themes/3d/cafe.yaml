@@ -1,0 +1,27 @@
+name:           "Cafe"
+colors:
+  primary:      "red"
+  secondary:    "blue"
+  red:
+    normal:     "#aa8b83"
+    bold:       "#dcb3a9"
+  green:
+    normal:     "#aba2a0"
+    bold:       "#ddd1ce"
+  yellow:
+    normal:     "#c2bdb8"
+    bold:       "#f4ede7"
+  blue:
+    normal:     "#788eaa"
+    bold:       "#90b1dc"
+  magenta:
+    normal:     "#8295aa"
+    bold:       "#a8c0dc"
+  cyan:
+    normal:     "#99a3ac"
+    bold:       "#c5d2de"
+  white:
+    normal:     "#c8c9cb"
+    bold:       "#eef7ff"
+
+wallpaper:      "/home/fullsalvo/Pictures/Walls/Cafe.png"
