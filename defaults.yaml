@@ -58,6 +58,7 @@ outer:          "4"
 
 # Floats
 floating: false
+windec: false
 shadows:        "false"
 shadopac:       "0.05"
 

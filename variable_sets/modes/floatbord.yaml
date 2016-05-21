@@ -1,4 +1,3 @@
 floating: true
-windec: true
-bordersize: 1
+bordersize: 8
 shadows: "true"

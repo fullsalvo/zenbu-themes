@@ -224,7 +224,9 @@ client.urgent           $dectext $dectext $dectext  $dectext
 
 {{ #floating }}
 for_window [class=".*"] floating enable
+{{ #windec }}
 for_window [class=".*"] border normal $bordersize
+{{ /windec }}
 for_window [class=".*"] title_format "{{ winfmt }}"
 {{ /floating }}
 {{ ^floating }}
