@@ -202,7 +202,7 @@ abstracts = {
   sb_uc_ops = "%_@[[ irssi_primary_n ]]$*%n";
   sb_uc_halfops = "%_%%[[ irssi_primary_n ]]$*%n";
   sb_uc_voices = "%_+[[ irssi_primary_n ]]$*%n";
-  sb_uc_normal = "[[ irssi_primary_n ]]$*%n";
+  sb_uc_normal = "%_[[ irssi_primary_n ]]$*%n";
   sb_uc_space = " ";
 
   # activity in statusbar

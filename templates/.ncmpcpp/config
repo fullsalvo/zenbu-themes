@@ -2,8 +2,8 @@
 #                       MPD Path                           #
 ############################################################
 mpd_music_dir                    = "/home/fullsalvo/Music/"
-mpd_port                         = "6667"
-mpd_host                         = "0.0.0.0"
+# mpd_port                         = "6667"
+# mpd_host                         = "0.0.0.0"
 
 ############################################################
 #                      Visualizer                          #
@@ -37,7 +37,7 @@ ignore_leading_the                    = "no"
 enable_window_title                   = "yes"
 playlist_disable_highlight_delay      = "1"
 message_delay_time                    = "1"
-now_playing_prefix                    = "${{ ncmpcpp_secondary_n }}◾$9$b"
+now_playing_prefix                    = "${{ ncmpcpp_secondary_n }}+$9$b"
 now_playing_suffix                    = "$/b"
 display_volume_level                  = "yes"
 clock_display_seconds                 = "yes"

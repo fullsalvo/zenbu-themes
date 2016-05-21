@@ -3,9 +3,8 @@ settings = {
   core = {
     real_name = "fullsalvo";
     user_name = "fullsalvo";
-    nick = "fullsalvo";
-    quit_message = "ditching this popsicle stand";
-    hostname = " ";
+    nick = "mitya";
+    quit_message = "";
   };
   "fe-text" = { actlist_sort = "refnum"; };
   "fe-common/core" = {
@@ -44,7 +43,7 @@ servers = (
 
 channels = (
   { name = "#nixers"; chatnet = "Iotek"; autojoin = "No"; },
-  { name = "#rice"; chatnet = "rizon"; autojoin = "no"; },
+  { name = "#rice"; chatnet = "rizon"; autojoin = "yes"; },
   { name = "#nanodesu"; chatnet = "rizon"; autojoin = "yes"; },
   { name = "#tomoko"; chatnet = "rizon"; autojoin = "yes"; }
 );
@@ -97,9 +96,9 @@ aliases = {
   ATAG = "WINDOW SERVER";
   UNSET = "set -clear";
   RESET = "set -default";
-  spoiler = "/msg ${C} \0031,1";
+  spoiler = "/msg ${C} \0031,1$0-";
   slap = "/me slaps $0 around with a large trout;";
-  comment = "/msg ${C} \0033>";
+  com = "/msg ${C} \0033>$0-";
   np = "exec -o mpc -f \"is listening to %title% by %artist%.\" | head -n 1";
 };
 
@@ -107,13 +106,12 @@ chatnets = {
   Iotek = { type = "IRC"; };
   rizon = {
     type = "IRC";
-    autosendcmd = "/^msg nickserv identify [[ WZK_IRC_PASS ]]";
+    autosendcmd = "/^msg nickserv identify [[ WZK_IRC_PASS ]];wait 2000";
   };
 };
 hilights = (
   { text = "fullsalvo"; nick = "yes"; word = "yes"; },
   { text = "salvo"; nick = "yes"; word = "yes"; },
-  { text = "fs"; nick = "yes"; word = "yes"; }
 );
 statusbar = {
   default = {
@@ -158,3 +156,4 @@ windows = {
   };
 };
 mainwindows = { 1 = { first_line = "0"; lines = "38"; }; };
+ignores = ( {mask = "*!*@*.22CB65D7.9F2E3E07.*"; level = "ALL"; } );

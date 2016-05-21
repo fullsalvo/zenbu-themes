@@ -25,6 +25,3 @@ colors:
 wallpaper:      "/home/fullsalvo/Pictures/Walls/Down.jpg"
 border:         "{`{{ colors }}['cyan']['normal'] `}"
 unfocused:      "{`{{ colors }}['yellow']['normal'] `}"
-
-mainfont:       "Leggie 16"
-winfmt:         " "

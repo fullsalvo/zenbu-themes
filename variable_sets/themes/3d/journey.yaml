@@ -1,0 +1,33 @@
+name:           "Endeavor"
+colors:
+  primary:      "blue"
+  secondary:    "cyan"
+  background:   "#1c1c22"
+  foreground:   "#bcbcbc"
+  cursor:       "#bcbcbc"
+  black:
+    normal:     "#313131"
+    bold:       "#434343"
+  red:
+    normal:     "#7e6565"
+    bold:       "#807171"
+  green:
+    normal:     "#72a89c"
+    bold:       "#93daca"
+  yellow:
+    normal:     "#90a996"
+    bold:       "#badbc2"
+  blue:
+    normal:     "#708ca2"
+    bold:       "#7faed0"
+  magenta:
+    normal:     "#817f98"
+    bold:       "#9b98b7"
+  cyan:
+    normal:     "#9aa7c0"
+    bold:       "#b2b7c0"
+  white:
+    normal:     "#a7a59c"
+    bold:       "#d9d6ca"
+
+wallpaper:      "/home/fullsalvo/Pictures/Walls/Endeavor.jpeg"

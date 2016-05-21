@@ -31,6 +31,3 @@ colors:
 wallpaper:      "/home/fullsalvo/Pictures/Walls/CanopyBed.jpg"
 border:         "{` {{ colors }}['red']['normal'] `}"
 unfocused:      "{` {{ colors }}['blue']['normal'] `}"
-
-mainfont:       "Leggie 16"
-winfmt:         " "

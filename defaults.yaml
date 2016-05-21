@@ -2,7 +2,8 @@
 term_fonts:
   #  - "Leggie"
   #  - "Profont"
-  - "fxd"
+  #  - "fxd"
+  - "neep"
   - "JackeyFont"
 antialias: "true"
 pixelsize: 11
@@ -46,7 +47,7 @@ colors:
 
 barback:        "#00000055"
 warning:        "#e84f4f"
-border:         "#71899d"
+border:         "{` {{ colors }}[{{ colors }}['primary']]['normal'] `}"
 bartext:        "#eeeeee"
 unfocused:      "#5c5c5c"
 dectext:        "#ffffff"
@@ -61,14 +62,17 @@ shadows:        "false"
 shadopac:       "0.05"
 
 bordersize:     "3"
-mainfont:       "leggie 9"
+mainfont:       "leggie 16"
 barfont:        "bitbuntu 6"
 # Roboto is still a nice bar font
 barheight:      "18"
-winfmt:         " %class"
+winfmt:         " "
 
 wallpaper:      "/home/fullsalvo/Pictures/Walls/WindowRain.jpg"
 wallmode:       "--bg-fill"
+
+dunsthgap:      "{` {{ inner }} + {{ outer }} `}"
+dunstvgap:      "{` {{ inner }} + {{ outer }} + {{ barheight }} `}"
 
 # Utility
 
@@ -123,7 +127,7 @@ prompt:           "blue"
 
 #emacsfont:      "Leggie"
 #emacsfont:      "Profont"
-emacsfont:      "fxd"
+emacsfont:      "neep"
 emacsheight:    "80"
 
 

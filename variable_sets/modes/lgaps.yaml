@@ -1,0 +1,5 @@
+inner:           "20"
+outer:           "50"
+
+dunsthgap:       "{` {{ inner }}/7 + {{ outer }}/7 `}"
+dunstvgap:       "{` {{ inner }}/7 + {{ outer }}/7 + {{ barheight }} `}"

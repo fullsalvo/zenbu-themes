@@ -105,12 +105,13 @@ bindsym $win+Shift+Return exec --no-startup-id x-terminal-emulator
 
 exec --no-startup-id nm-applet
 exec --no-startup-id pulseaudio
+exec --no-startup-id mpd
+exec --no-startup-id mpdscribble
 exec --no-startup-id gnome-settings-daemon
 exec --no-startup-id compton
 exec --no-startup-id dunst
 exec_always --no-startup-id $wallprog $walltype $wall
 exec xrdb $home/.XResources
-exec $home/.bin/mpc-notify-daemon &
 
 #######################################################################
 #                             i3 Keybindings                          #
@@ -188,7 +189,7 @@ bindsym $mod+Shift+space floating toggle
 bindsym $mod+space focus mode_toggle
 
 bindsym $mod+a focus parent
-#bindsym $mod+d focus child
+bindsym $mod+d focus child
 
 mode "Resize" {
         bindsym j resize shrink width 1 px or 1 ppt
@@ -196,10 +197,10 @@ mode "Resize" {
         bindsym l resize shrink height 1 px or 1 ppt
         bindsym semicolon resize grow width 1 px or 1 ppt
 
-        bindsym Left resize shrink width 1 px or 1 ppt
-        bindsym Down resize grow height 1 px or 1 ppt
-        bindsym Up resize shrink height 1 px or 1 ppt
-        bindsym Right resize grow width 1 px or 1 ppt
+        bindsym Left resize shrink width 1px or 1ppt
+        bindsym Down resize grow height 1px or 1ppt
+        bindsym Up resize shrink height 1px or 1ppt
+        bindsym Right resize grow width 1px or 1ppt
 
         bindsym Return mode "default"
         bindsym Escape mode "default"

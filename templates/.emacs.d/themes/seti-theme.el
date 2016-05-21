@@ -54,6 +54,9 @@
    `(next-error ((t (:inherit (region)))))
    `(query-replace ((t (:inherit (isearch)))))
 
+   `(widget-button ((t (:weight normal))))
+   `(bold-italic ((t (:weight normal))))
+
    ;; Font Lock
    `(font-lock-builtin-face ((t (:foreground ,magenta))))
    `(font-lock-comment-delimiter-face ((t (:inherit (font-lock-comment-face)))))
@@ -69,7 +72,7 @@
    `(font-lock-string-face ((t (:foreground ,green))))
    `(font-lock-type-face ((t (:foreground ,yellow))))
    `(font-lock-variable-name-face ((t (:foreground ,blue))))
-   `(font-lock-warning-face ((t (:weight bold :inherit (error)))))
+   `(font-lock-warning-face ((t (:weight medium :inherit (error)))))
 
    ;; Fullsalvo Font Locks
    ;;LaTeX
@@ -80,6 +83,9 @@
    `(font-latex-sectioning-4-face ((t (:family "{{ emacsfont }}" :height 80))))
    `(font-latex-sectioning-5-face ((t (:family "{{ emacsfont }}" :height 80))))
    `(font-latex-warning-face ((t (:foreground "#FF0000"))))
+
+   ;;Markdown
+   `(markdown-header-face ((t (:inherit font-lock-function-name-face))))
 
    ;;Shell
    `(sh-quoted-exec ((t (:foreground ,red))))
