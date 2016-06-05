@@ -4,3 +4,7 @@ term_fonts:
 antialias: "false"
 pixelsize: 8
 spacing: 1
+
+emacsfont: "Lime"
+dunstfont: "Lemon"
+dunstfsize: 8

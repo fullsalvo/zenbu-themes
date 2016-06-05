@@ -20,6 +20,7 @@ settings = {
     trackbar_string = "_ ";
     smartfilter_delay = "1200";
   };
+  "irc/core" = { alternate_nick = "fullsalvo"; };
 };
 
 servers = (
@@ -45,7 +46,7 @@ channels = (
   { name = "#nixers"; chatnet = "Iotek"; autojoin = "No"; },
   { name = "#rice"; chatnet = "rizon"; autojoin = "yes"; },
   { name = "#nanodesu"; chatnet = "rizon"; autojoin = "yes"; },
-  { name = "#tomoko"; chatnet = "rizon"; autojoin = "yes"; }
+  { name = "#tomoko"; chatnet = "rizon"; autojoin = "yes"; },
 );
 
 aliases = {
@@ -100,6 +101,7 @@ aliases = {
   slap = "/me slaps $0 around with a large trout;";
   com = "/msg ${C} \0033>$0-";
   np = "exec -o mpc -f \"is listening to %title% by %artist%.\" | head -n 1";
+  same = "/msg ${C} [\0033✔\017] Same";
 };
 
 chatnets = {
@@ -112,6 +114,7 @@ chatnets = {
 hilights = (
   { text = "fullsalvo"; nick = "yes"; word = "yes"; },
   { text = "salvo"; nick = "yes"; word = "yes"; },
+  { text = "mitya"; nick = "yes"; word = "yes"; }
 );
 statusbar = {
   default = {

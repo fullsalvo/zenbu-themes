@@ -1,10 +1,8 @@
-;;; seti-theme.el --- A dark colored theme, inspired by Seti Atom Theme
-;; Original Author: Vlad Piersec
-;; URL: https://github.com/caisah/seti-theme
-;; Heavily modified by fullsalvo
+;;; fullsalvo-theme.el
+;; ===========================
 
-(deftheme seti
-  "Seti - A theme inspired by Seti Atom Theme")
+(deftheme fullsalvo
+  "Fullsalvo - A Custom Theme")
 
 (let ((blue "{{ n_blue }}")
       (green "{{ n_green }}")
@@ -31,23 +29,25 @@
       (intense-green "#B3BD54"))
 
   (custom-theme-set-faces
-   'seti
+   'fullsalvo
 
    ;; Basics
+   ;; ============================
+
    `(default ((t (:background ,background :foreground ,text))))
    `(cursor ((t (:background ,input-text :foreground ,background))))
    `(highlight ((t (:background ,text-highlight))))
    `(minibuffer-prompt ((t (:foreground ,dark-blue :weight normal))))
    `(region ((t (:background ,text-region))))
-   `(error ((t (:foreground ,red :weight bold :underline (:color ,red :style line)))))
+   `(error ((t (:foreground ,red :weight normal :underline (:color ,red :style line)))))
 
-   `(isearch ((t (:background ,background :foreground ,text :box (:line-width 1 :color ,dark-blue) :weight bold))))
+   `(isearch ((t (:background ,background :foreground ,text :box (:line-width 1 :color ,dark-blue) :weight normal))))
    `(lazy-highlight ((t (:background ,background :foreground ,text-2 :box (:line-width 1 :color ,dark-blue)))))
    `(mode-line ((t (:foreground ,text :background ,background :overline ,text :underline (:color ,text :style line)))))
    `(mode-line-buffer-id ((t (:weight normal :foreground ,text))))
    `(mode-line-emphasis ((t (:weight bold))))
    `(mode-line-highlight ((t (:box (:line-width 1 :color ,text)))))
-   `(mode-line-inactive ((t (:weight light :foreground ,text :background ,background-2))))
+   `(mode-line-inactive ((t (:weight light :foreground ,background :distant-foreground ,background :background ,text :overline ,text))))
    `(secondary-selection ((t (:background ,background-2))))
    `(trailing-whitespace ((t (:background ,background-3))))
    `(match ((t (:weight bold :foreground ,background :background ,intense-green))))
@@ -55,9 +55,10 @@
    `(query-replace ((t (:inherit (isearch)))))
 
    `(widget-button ((t (:weight normal))))
-   `(bold-italic ((t (:weight normal))))
 
-   ;; Font Lock
+   ;; General Font Locks
+   ;; ============================
+
    `(font-lock-builtin-face ((t (:foreground ,magenta))))
    `(font-lock-comment-delimiter-face ((t (:inherit (font-lock-comment-face)))))
    `(font-lock-comment-face ((t (:foreground ,text-3))))
@@ -74,8 +75,11 @@
    `(font-lock-variable-name-face ((t (:foreground ,blue))))
    `(font-lock-warning-face ((t (:weight medium :inherit (error)))))
 
-   ;; Fullsalvo Font Locks
-   ;;LaTeX
+   ;; Language Font Locks
+   ;; ============================
+
+   ;; LaTeX
+   ;; -----
    `(font-latex-math-face ((t (:foreground ,magenta))))
    `(font-latex-sectioning-1-face ((t (:family "{{ emacsfont }}" :height 80))))
    `(font-latex-sectioning-2-face ((t (:family "{{ emacsfont }}" :height 80))))
@@ -84,18 +88,25 @@
    `(font-latex-sectioning-5-face ((t (:family "{{ emacsfont }}" :height 80))))
    `(font-latex-warning-face ((t (:foreground "#FF0000"))))
 
-   ;;Markdown
+   ;; Markdown
+   ;; --------
    `(markdown-header-face ((t (:inherit font-lock-function-name-face))))
 
-   ;;Shell
+   ;; Shell
+   ;; -----
    `(sh-quoted-exec ((t (:foreground ,red))))
    `(sh-heredoc ((t (:foreground ,yellow))))
 
+   ;; Mode-Specific Font Locks
+   ;; ============================
+
    ;; Parens
+   ;; ------
    `(show-paren-match ((t (:foreground ,text-2 :underline (:color ,dark-blue :style line)))))
    `(show-paren-mismatch ((t (:foreground ,text-2 :underline (:color ,red :style line)))))
 
    ;; Dired
+   ;; -----
    `(dired-directory ((t (:foreground ,text :weight extrabold))))
    `(dired-header ((t (:foreground "white"  :background ,blue :weight bold))))
    `(dired-ignored ((t (:foreground ,text-3))))
@@ -106,6 +117,7 @@
    `(dired-warning ((t (:inherit (font-lock-warning-face)))))
 
    ;; Lines
+   ;; -----
    `(linum ((t (:foreground ,text-3  :weight light :height 0.9))))
    `(fringe ((t (:background ,background-3 :foreground ,text-4))))
    `(left-margin ((t (nil))))
@@ -113,7 +125,7 @@
 
 
 (custom-theme-set-variables
- 'seti
+ 'fullsalvo
 
   `(cursor-type 'hbar)
   `(ansi-color-names-vector [ ,background ,red ,green ,yellow ,blue ,magenta ,blue ,text])
@@ -126,6 +138,6 @@
   (add-to-list 'custom-theme-load-path
                (file-name-as-directory (file-name-directory load-file-name))))
 
-(provide-theme 'seti)
+(provide-theme 'fullsalvo)
 
-;;; seti-theme.el ends here
+;;; fullsalvo-theme.el ends here

@@ -1,4 +1,3 @@
-;; The following line is due to changes made for whizkers' utility
 {{ = <% %> = }}
 
 ;; use custom font faces

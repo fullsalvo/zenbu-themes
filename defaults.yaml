@@ -1,8 +1,5 @@
 # Fonts
 term_fonts:
-  #  - "Leggie"
-  #  - "Profont"
-  #  - "fxd"
   - "neep"
   - "JackeyFont"
 antialias: "true"
@@ -49,11 +46,11 @@ barback:        "#00000055"
 warning:        "#e84f4f"
 border:         "{` {{ colors }}[{{ colors }}['primary']]['normal'] `}"
 bartext:        "#eeeeee"
+barfoc:         "{{ bartext }}"
 unfocused:      "#5c5c5c"
 dectext:        "#ffffff"
 rofibg:         "#222222"
 inner:          "4"
-# Formerly 18
 outer:          "4"
 
 # Floats
@@ -62,18 +59,30 @@ windec: false
 shadows:        "false"
 shadopac:       "0.05"
 
-bordersize:     "3"
+bordersize:     "2"
 mainfont:       "leggie 16"
-barfont:        "bitbuntu 6"
-# Roboto is still a nice bar font
+barfont:        "lime 6"
 barheight:      "18"
 winfmt:         " "
 
 wallpaper:      "/home/fullsalvo/Pictures/Walls/WindowRain.jpg"
 wallmode:       "--bg-fill"
 
+# Emacs
+
+emacsfont:      "neep"
+emacsheight:    "80"
+
+# Notifications
+
+dunstfont:      "{{ emacsfont }}"
 dunsthgap:      "{` {{ inner }} + {{ outer }} `}"
 dunstvgap:      "{` {{ inner }} + {{ outer }} + {{ barheight }} `}"
+dunstfsize:     "9"
+
+# Firefox
+
+fffont:         "{` {{ term_fonts }}[0] `}"
 
 # Utility
 
@@ -124,15 +133,8 @@ startpage:        "{` {{ colors }}[{{ colors }}['primary']]['normal'] `}"
 tmux:             "{` {{ colornumbers }}[{{ colors }}['primary']] `}"
 prompt:           "blue"
 
-# Emacs
-
-#emacsfont:      "Leggie"
-#emacsfont:      "Profont"
-emacsfont:      "neep"
-emacsheight:    "80"
-
-
 # Irssi
+
 irssi_colors:
   black:
     normal: '%k'

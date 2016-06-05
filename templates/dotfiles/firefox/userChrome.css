@@ -10,7 +10,7 @@
 	/* Browser Features */
 	--scrollbar: -15px !important;
 	/* Fonts */
-	--font-family: '{{ emacsfont }}' !important;
+	--font-family: '{{ fffont }}' !important;
 	--font-size: 11px !important;
 	/* Tabs */
 	--tab-height: 24px !important;

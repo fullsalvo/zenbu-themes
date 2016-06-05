@@ -1,7 +1,7 @@
 name:           "Endeavor"
 colors:
   primary:      "blue"
-  secondary:    "cyan"
+  secondary:    "white"
   background:   "#1c1c22"
   foreground:   "#bcbcbc"
   cursor:       "#bcbcbc"

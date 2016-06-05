@@ -44,7 +44,7 @@ div.books {
 	padding-left: 0px;
 	display: table;
 
-	font-family: {{ emacsfont }};
+	font-family: {{ fffont }};
 	font-weight: 300;
 	font-size: 0.75em;
 
@@ -60,7 +60,7 @@ div.books2 {
 	float: right;
 	display: table;
 
-	font-family: {{ emacsfont }};
+	font-family: {{ fffont }};
 	font-weight: 300;
 	font-size: 0.75em;
 

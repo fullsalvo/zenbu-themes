@@ -1,5 +1,5 @@
 [global]
-    font = {{emacsfont}} 9
+    font = {{ dunstfont }} {{ dunstfsize }}
     allow_markup = yes
     format = "\n%s\n%b"
     sort = yes

@@ -7,7 +7,7 @@ colors:
   foreground:   "#abacae"
   cursor:       "#abacae"
   black:
-    normal:     "#2f3b3b"
+    normal:     "#3a4949"
     bold:       "#646a6d"
   red:
     normal:     "#aa937e"

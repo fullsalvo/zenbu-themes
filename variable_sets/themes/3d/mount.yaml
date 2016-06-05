@@ -1,0 +1,40 @@
+name:           "Mount"
+colors:
+  primary:      "red"
+  secondary:    "yellow"
+  background:   "#1c1313"
+  foreground:   "#dadada"
+  cursor:       "#dadada"
+  black:
+    normal:     "#292929"
+    bold:       "#414141"
+  red:
+    normal:     "#aa524c"
+    bold:       "#dc6a62"
+  green:
+    normal:     "#aba571"
+    bold:       "#dbd390"
+  yellow:
+    normal:     "#c59b78"
+    bold:       "#f7c296"
+  blue:
+    normal:     "#5b5d81"
+    bold:       "#8386ba"
+  magenta:
+    normal:     "#9489a9"
+    bold:       "#beb0db"
+  cyan:
+    normal:     "#a88692"
+    bold:       "#daadbd"
+  white:
+    normal:     "#c5b7af"
+    bold:       "#f7e5db"
+
+barback:        "#000000cc"
+bartext:        "{` {{ colors }}['foreground'] `}"
+barfoc:         "{` {{ colors }}[{{ colors }}['primary']]['normal'] `}"
+warning:        "{` {{ colors }}[{{ colors }}['secondary']]['normal'] `}"
+
+wallpaper:      "/home/fullsalvo/Pictures/Walls/Fuji.jpg"
+
+prompt:         "red"
