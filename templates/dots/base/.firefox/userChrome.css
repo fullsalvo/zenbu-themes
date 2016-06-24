@@ -1,4 +1,9 @@
-@namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
+/*
+Contact: < fullsalvo at protonmail dot com >
+*/
+
+@namespace
+url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
 
 /*
 //////////////////////////////////////////////////////////////////////
@@ -9,15 +14,18 @@
 :root {
 	/* Browser Features */
 	--scrollbar: -15px !important;
+
 	/* Fonts */
 	--font-family: '{{ fffont }}' !important;
 	--font-size: 11px !important;
+
 	/* Tabs */
 	--tab-height: 24px !important;
 	--tab-width-min: 10px !important;
 	--tab-width-max: 200px !important;
 	--tab-margins: -15px !important;
 	--tab-align: center !important;
+
 	/* URL/NAV BAR */
 	--url-align: left !important;
 	--url-height: 24px !important;

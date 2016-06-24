@@ -19,4 +19,5 @@
 
 # PS1='\w\[${BLUE}\] »» \[${RESET}\]'
 # PS1='\w\[${BLUE}\] ─── \[${RESET}\]'
-PS1='%~%F{<% prompt %>} ┄─┄┄ %F{reset_color}'
+PS1='%F{<% prompt %>} ┄─┄┄ %F{reset_color}'
+RPROMPT=' %~'

@@ -70,7 +70,7 @@ abstracts = {
   ########### messages #################################
 
   # the basic styling of how to print message, $0 = nick mode, $1 = nick
-  msgnick = "%k$0%N $1 │ %|%N";
+  msgnick = "%k$0 %N$1%N - %|";
 
   # $0 = nick mode, $1 = nick
   ownmsgnick = "{msgnick $0 $1}";
@@ -82,7 +82,7 @@ abstracts = {
 
   # public highlighted message in channel
   pubmsghinick = "{msgnick $0 $1}";
-  menick = "[[ irssi_secondary_b ]]$*%n";
+  menick = "%R$*%n";
 
   # channel name is printed with message
   msgchannel = "%Z5F5F5F:%m$*%n";
@@ -91,22 +91,22 @@ abstracts = {
   privmsg = "$0=%b\"$1-\"%n ";
 
   # private message from you, $0 = "msg", $1 = target nick
-  ownprivmsg = "$0=%b\"$1-\"%n ";
+  ownprivmsg = "$1$0=%b\"$1-\"%n ";
 
   # private message in query
-  privmsgnick = "%g<%N %|";
+  privmsgnick = "%g<%N $0 - %|";
 
   # own private message in query
-  ownprivmsgnick = "%r>%N %|";
+  ownprivmsgnick = "%r>%N $0 %N- %|";
 
 
   ########## Actions (/ME stuff) #########################
 
   # generic one that's used by most actions
-  action = "  %m$* %M✶ %m%|";
+  action = "  %R* %m$* %|";
 
   # own action, both private/public
-  ownaction = "  %M$* %M✶%N%m";
+  ownaction = "  %R* %m$*%|";
 
   # own action with target, both private/public
   ownaction_target = "{action $*}";
@@ -225,29 +225,29 @@ formats = {
     line_start = "{line_start}";
     line_start_irssi = "{line_start}";
 
-    join = "         join %g>%n {channick $0} %k({nickhost %k$1}%k)%n";
-    part = "         part %r<%n {channick $0} %k({nickhost %k$1}%k)%n";
-    kick = "       kicked %r<%n {channick $0} %k({nickhost %k$1}%k)%n";
-    quit = "         quit %r<%n {channick $0} %k({nickhost %k$1}%k)%n";
+    join = "join %g>%n {channick $0} %k({nickhost %k$1}%k)%n";
+    part = "part %r<%n {channick $0} %k({nickhost %k$1}%k)%n";
+    kick = "kicked %r<%n {channick $0} %k({nickhost %k$1}%k)%n";
+    quit = "quit %r<%n {channick $0} %k({nickhost %k$1}%k)%n";
     quit_once = "{channel $3} {channick $0} {chanhost $1} %kquit {reason %C$2}";
 
-    nick_changed = "{channick $[-13]0} %G>%n {channick $1}";
-    your_nick_changed = "          you %G>%n {channick $1}";
+    nick_changed = "{channick $0} %G>%n {channick $1}";
+    your_nick_changed = "you %G>%n {channick $1}";
 
-    pubmsg = "{pubmsgnick $2 {pubnick $[-11]0}}$1";
+    pubmsg = "{pubmsgnick $2 {pubnick $0}}$1";
 
-    own_msg = "{ownmsgnick $2 {ownnick $[-11]0}}$1";
-    own_msg_channel = "{ownmsgnick $3 {ownnick $[-11]0}{msgchannel $1}}$2";
-    own_msg_private_query = "{ownprivmsgnick {ownprivnick $[-11]2}}$1";
+    own_msg = "{ownmsgnick $2 {ownnick $0}}%n$1";
+    own_msg_channel = "{ownmsgnick $3 {ownnick $0}{msgchannel $1}}$2";
+    own_msg_private_query = "{ownprivmsgnick {ownprivnick $2}}$1";
 
-    pubmsg_me = "{pubmsghinick $2 {menick $[-11]0}}$1";
-    pubmsg_me_channel = "{pubmsghinick $3 {menick $[-11]0}{msgchannel $1}}$2";
+    pubmsg_me = "{pubmsghinick $2 {menick $0}}$1";
+    pubmsg_me_channel = "{pubmsghinick $3 {menick $0}{msgchannel $1}}$2";
 
-    pubmsg_hilight = "{pubmsghinick $3 {menick $[-11]1}}$2";
-    pubmsg_hilight_channel = "{pubmsghinick $0 $[-11]1$4{msgchannel $2}}$3";
+    pubmsg_hilight = "{pubmsghinick $3 {menick $1}}$2";
+    pubmsg_hilight_channel = "{pubmsghinick $0 $1$4{msgchannel $2}}$3";
 
-    pubmsg_channel = "{pubmsgnick {pubnick %G$[-11]0}$2}$1";
-    msg_private_query = "{privmsgnick $[-11]0}$2";
+    pubmsg_channel = "{pubmsgnick {pubnick %G$0}$2}$1";
+    msg_private_query = "{privmsgnick $0}$2";
     new_topic = "        %ctopic %k= %|%B'$2' %non %b$1%n%k[set by {nick %y$0}]";
     endofnames = "%k└┄┄ %mtotal: {hilight $2} ops, {hilight $3} halfops, {hilight $4} voices, {hilight $5} normal%n";
   };
@@ -272,15 +272,12 @@ formats = {
     end_of_whois = "%k└┄┄ ";
     whois_not_found = "%k─┄┄ %nthere is no such nick $0";
 
-    own_action = "{ownaction $[-11]0} $1";
-    action_private = "{pvtaction $[-11]0}$1";
-    action_private_query = "{pvtaction_query $[-11]0} $2";
-    action_public = "{pubaction $[-11]0}$1";
+    own_action = "{ownaction $0} $1";
+    action_private = "{pvtaction $0}$1";
+    action_private_query = "{pvtaction_query $0} $2";
+    action_public = "{pubaction $0}$1";
   };
   "Irssi::Script::ichat" = {
     ichat_timestamp = "%Y>%k>      $1 %y>%n";
-  "perl/core/scripts" = {
-  trackbar_style = "%[[ irssi_primary_n ]]";
-  };
   };
 };

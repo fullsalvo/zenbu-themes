@@ -31,3 +31,5 @@ colors:
 wallpaper:      "/home/fullsalvo/Pictures/Walls/Scale.jpeg"
 
 border:         "{` {{ colors }}['yellow']['normal'] `}"
+
+ncmpcpp_accent: "blue"

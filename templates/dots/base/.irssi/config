@@ -8,7 +8,7 @@ settings = {
   };
   "fe-text" = { actlist_sort = "refnum"; };
   "fe-common/core" = {
-    theme = "nixers";
+    theme = "fullsalvo";
     bell_beeps = "no";
     timestamps = "no";
     autolog = "yes";

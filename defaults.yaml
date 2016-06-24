@@ -67,11 +67,12 @@ winfmt:         " "
 
 wallpaper:      "/home/fullsalvo/Pictures/Walls/WindowRain.jpg"
 wallmode:       "--bg-fill"
+wallprog:       "feh"
 
 # Emacs
 
 emacsfont:      "neep"
-emacsheight:    "80"
+emacssize:      "10"
 
 # Notifications
 
@@ -128,6 +129,7 @@ text_primary:         "{` {{ colors }}['primary'] `}"
 text_secondary:       "{` {{ colors }}['secondary'] `}"
 ncmpcpp_primary_n:    "{` {{ colornumbers }}[{{ colors }}['primary']] + 1 `}"
 ncmpcpp_secondary_n:  "{` {{ colornumbers }}[{{ colors }}['secondary']] + 1 `}"
+ncmpcpp_accent:       "white"
 
 startpage:        "{` {{ colors }}[{{ colors }}['primary']]['normal'] `}"
 tmux:             "{` {{ colornumbers }}[{{ colors }}['primary']] `}"
@@ -169,6 +171,17 @@ irssi_colors:
     bold:   '%W'
     bg:     '%7'
 
+irssi_colornumbers:
+  white: 0
+  black: 1
+  blue: 2
+  green: 3
+  red: 5
+  magenta: 6
+  yellow: 7
+  cyan: 10
+
+irssi_default:      "{` {{ irssi_colornumbers }}[{{ colors }}['primary']] `}"
 irssi_primary_n:    "{` {{ irssi_colors }}[{{ colors }}['primary']]['normal'] `}"
 irssi_primary_b:    "{` {{ irssi_colors }}[{{ colors }}['primary']]['bold'] `}"
 irssi_primary_bg:   "{` {{ irssi_colors }}[{{ colors }}['primary']]['bg'] `}"
