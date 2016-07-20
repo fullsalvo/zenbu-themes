@@ -246,7 +246,7 @@ url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
     background: {{ bgc }} !important;
     border: 0px {{ bgc }}!important;
     box-shadow: none !important;
-    height: calc(var(--url-height) + 9px) !important;
+    height: var(--url-height) !important;
     position: fixed !important;
     bottom: 0 !important;
     width: 100% !important;
@@ -261,7 +261,7 @@ url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
     margin: 0 0 0 0 !important;
     height: var(--url-height);
     width: 2000px !important;
-    padding-bottom: 0px !important;
+    padding-bottom: calc((var(--url-height) - var(--font-size)) / 2) !important;
     padding-left: 15px !important;
 }
 

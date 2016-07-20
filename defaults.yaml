@@ -3,7 +3,7 @@ term_fonts:
   - "neep"
   - "JackeyFont"
 antialias: "true"
-pixelsize: 11
+pixelsize: 13
 spacing: 0
 
 # Colors

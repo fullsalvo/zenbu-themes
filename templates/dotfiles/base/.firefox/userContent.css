@@ -580,6 +580,10 @@ body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, 
 	background-color: {{ bgc }} !important;
 }
 
+.thing .title {
+	color: {{ fgc }} !important;
+}
+
 .tabmenu li.selected a {
 	color: {{ n_red }} !important;
 }
