@@ -1,7 +1,7 @@
 body {
 	background-color: {{ bgc }};
 	color: {{ n_red }} !important;
-	font-size: 16px;
+	font-size: {{ spfs }}px;
 }
 
 a, a:link {

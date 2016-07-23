@@ -4,7 +4,7 @@ URxvt.boldFont:
 XTerm.font:      {{ #term_fonts }}xft:{{ . }}:pixelsize={{ pixelsize }}:antialias={{ antialias }},{{ /term_fonts }}
 XTerm.boldFont:
 
-!General
+! General
 *.scrollBar: false
 *.saveLines: 8192
 *.internalBorder: 10
@@ -19,11 +19,24 @@ Xft.hintstyle: hintnone
 Xft.lcdfilter: lcddefault
 Xft.rgba: rgb
 
-!Separate settings for emacs
+! Separate settings for emacs
 emacs.internalBorder: 0
 
-! Clickable Links
+! Rofi
+rofi.opacity: 80
+rofi.width: 40
+rofi.lines: 3
+rofi.font: {{ fffont }} {{ dunstfsize }}
+rofi.padding: 50
+rofi.bw: {{ bordersize }}
+rofi.terminal: urxvt
+rofi.disable-history: true
+rofi.color-window: {{ rofibg }}, {{ border }}
+rofi.color-normal: {{ rofibg }}, {{ fgc }}, {{ rofibg }}, {{ n_primary }}, {{ rofibg }}
+rofi.color-active: {{ rofibg }}, {{ fgc }}, {{ rofibg }}, {{ b_primary }}, {{ rofibg }}
+rofi.color-urgent: {{ rofibg }}, {{ fgc }}, {{ rofibg }}, {{ n_secondary }}, {{ rofibg }}
 
+! Clickable Links
 *perl-ext-common:	 default,matcher,clipboard
 *keysym.Shift-Control-V: perl:clipboard:paste
 *urlLauncher:		 firefox

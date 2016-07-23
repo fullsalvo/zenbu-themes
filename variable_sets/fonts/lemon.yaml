@@ -8,3 +8,6 @@ spacing: 1
 emacsfont: "Lime"
 dunstfont: "Lemon"
 dunstfsize: 8
+
+fffontsz: 12
+spfs: 12

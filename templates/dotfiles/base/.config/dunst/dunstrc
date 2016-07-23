@@ -22,14 +22,15 @@
     horizontal_padding = 8
     separator_color = frame
     startup_notification = false
+	icon_position = left
 
 [frame]
     width = 1
     color = "{{ n_primary }}"
 
 [shortcuts]
-    close = ctrl+space
-    close_all = ctrl+shift+space
+    close = mod4+x
+    close_all = mod4+shift+x
     history = ctrl+grave
     context = ctrl+shift+period
 

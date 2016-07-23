@@ -79,11 +79,12 @@ emacssize:      "10"
 dunstfont:      "{{ emacsfont }}"
 dunsthgap:      "{` {{ inner }} + {{ outer }} `}"
 dunstvgap:      "{` {{ inner }} + {{ outer }} + {{ barheight }} `}"
-dunstfsize:     "9"
+dunstfsize:     "8"
 
 # Firefox
 
 fffont:         "{` {{ term_fonts }}[0] `}"
+fffontsz:       "11"
 
 # Utility
 
@@ -132,6 +133,7 @@ ncmpcpp_secondary_n:  "{` {{ colornumbers }}[{{ colors }}['secondary']] + 1 `}"
 ncmpcpp_accent:       "white"
 
 startpage:        "{` {{ colors }}[{{ colors }}['primary']]['normal'] `}"
+spfs:             "16"
 tmux:             "{` {{ colornumbers }}[{{ colors }}['primary']] `}"
 prompt:           "blue"
 
