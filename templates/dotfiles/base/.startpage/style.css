@@ -1,7 +1,11 @@
 body {
 	background-color: {{ bgc }};
 	color: {{ n_red }} !important;
-	font-size: {{ spfs }}px;
+}
+
+div[class^="books"], div [class*="books"] {
+	font-family: "{{ fffont }}" !important;
+	font-size: {{ spfs }}px !important;
 }
 
 a, a:link {
@@ -44,10 +48,6 @@ div.books {
 	padding-left: 0px;
 	display: table;
 
-	font-family: {{ fffont }};
-	font-weight: 300;
-	font-size: 0.75em;
-
 	position: absolute;
 	left: 0px;
 	top: 30%;
@@ -60,10 +60,6 @@ div.books2 {
 	float: right;
 	display: table;
 
-	font-family: {{ fffont }};
-	font-weight: 300;
-	font-size: 0.75em;
-
 	position: absolute;
 	right: 0px;
 	top: 30%;
@@ -75,4 +71,11 @@ ul li#books2 {
 
 ul li#books2:after {
 	content: "" !important;
+}
+
+.mascot {
+	width: 30%;
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
 }

@@ -43,7 +43,7 @@ url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
     font-family: var(--font-family);
     font-size: var(--font-size);
     text-shadow: none !important;
-    font-weight: normal !important
+    font-weight: normal !important;
 }
 
 /* Internal Border & Account for URL Bar Spacing */

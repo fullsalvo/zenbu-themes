@@ -4,4 +4,5 @@ term_fonts:
 pixelsize: 11
 spacing: 0
 
-emacsfont: "cure"
+emacsfont: "lime"
+fffontsz: 12

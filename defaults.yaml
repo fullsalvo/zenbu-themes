@@ -3,7 +3,7 @@ term_fonts:
   - "neep"
   - "JackeyFont"
 antialias: "true"
-pixelsize: 13
+pixelsize: 12
 spacing: 0
 
 # Colors
@@ -72,7 +72,7 @@ wallprog:       "feh"
 # Emacs
 
 emacsfont:      "neep"
-emacssize:      "10"
+emacssize:      "8"
 
 # Notifications
 
@@ -133,7 +133,10 @@ ncmpcpp_secondary_n:  "{` {{ colornumbers }}[{{ colors }}['secondary']] + 1 `}"
 ncmpcpp_accent:       "white"
 
 startpage:        "{` {{ colors }}[{{ colors }}['primary']]['normal'] `}"
-spfs:             "16"
+spfs:             "11"
+mascot: False
+
+# Shell
 tmux:             "{` {{ colornumbers }}[{{ colors }}['primary']] `}"
 prompt:           "blue"
 
