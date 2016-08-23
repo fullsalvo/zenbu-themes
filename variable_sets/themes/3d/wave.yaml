@@ -1,0 +1,31 @@
+name:          "Flower"
+colors:
+  primary:     ""
+  secondary:   ""
+  background:  ""
+  black:
+    normal:    ""
+    bold:      ""
+  red:
+    normal:    ""
+    bold:      ""
+  green:
+    normal:    ""
+    bold:      ""
+  yellow:
+    normal:    ""
+    bold:      ""
+  blue:
+    normal:    ""
+    bold:      ""
+  magenta:
+    normal:    ""
+    bold:      ""
+  cyan:
+    normal:    ""
+    bold:      ""
+  white:
+    normal:    ""
+    bold:      ""
+
+wallpaper:     "/home/fullsalvo/Pictures/Walls/Flower.jpg"

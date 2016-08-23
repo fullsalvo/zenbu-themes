@@ -26,6 +26,5 @@ colors:
 
 wallpaper:      "/home/fullsalvo/Pictures/Walls/Catch.jpg"
 
-
-
-barback:        "#000000dd"
+barback:        "000000"
+baralpha:       "dd"

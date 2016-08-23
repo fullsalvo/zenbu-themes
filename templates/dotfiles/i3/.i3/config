@@ -11,7 +11,7 @@ set $oug        {{ outer }}
 set $home       /home/fullsalvo
 
 # Bar Background Text
-set $background {{ barback }}
+set $background #{{ barback }}{{ baralpha }}
 # Bar Warning Colour
 set $warning    {{ warning }}
 # Active Window Colour
@@ -44,11 +44,11 @@ set $wallprog   {{ wallprog }}
 set $maimbord   0.5,0.5,0.5
 
 # Workspace Labels
-set $ws1        ♦
-set $ws2        ♦
-set $ws3        ♦
-set $ws4        ♦
-set $ws5        ♦
+set $ws1        
+set $ws2        
+set $ws3        
+set $ws4        
+set $ws5        
 
 #######################################################################
 #                           Miscellanious                             #
@@ -174,20 +174,38 @@ bindsym $mod+space focus mode_toggle
 bindsym $mod+a focus parent
 bindsym $mod+d focus child
 
+{{ #floating }}
+mode "Resize" {
+	 bindsym j resize shrink width 10 px or 10 ppt
+ 	 bindsym k resize grow height 10 px or 10 ppt
+	 bindsym l resize shrink height 10 px or 10 ppt
+	 bindsym semicolon resize grow width 10 px or 10 ppt
+
+	 bindsym Left resize shrink width 10 px or 10 ppt
+	 bindsym Down resize grow height 10 px or 10 ppt
+	 bindsym Up resize shrink height 10 px or 10 ppt
+	 bindsym Right resize grow width 10 px or 10 ppt
+
+	 bindsym Return mode "default"
+	 bindsym Escape mode "default"
+}
+{{ /floating }}
+{{ ^floating }}
 mode "Resize" {
 	 bindsym j resize shrink width 1 px or 1 ppt
  	 bindsym k resize grow height 1 px or 1 ppt
 	 bindsym l resize shrink height 1 px or 1 ppt
 	 bindsym semicolon resize grow width 1 px or 1 ppt
 
-	 bindsym Left resize shrink width 1px or 1ppt
-	 bindsym Down resize grow height 1px or 1ppt
-	 bindsym Up resize shrink height 1px or 1ppt
-	 bindsym Right resize grow width 1px or 1ppt
+	 bindsym Left resize shrink width 1 px or 1 ppt
+	 bindsym Down resize grow height 1 px or 1 ppt
+	 bindsym Up resize shrink height 1 px or 1 ppt
+	 bindsym Right resize grow width 1 px or 1 ppt
 
 	 bindsym Return mode "default"
 	 bindsym Escape mode "default"
 }
+{{ /floating }}
 
 bindsym $mod+r mode "Resize"
 
@@ -256,31 +274,31 @@ bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 10
 #                                Bar                                  #
 #######################################################################
 
-# exec $home/.bin/bar
+exec_always $home/.config/lemonbar/startbar &
 
-bar {
-    i3bar_command i3bar -t
-    status_command i3blocks
-    position          top
-    workspace_buttons yes
-    strip_workspace_numbers yes
-    binding_mode_indicator yes
-    height $bheight
-    tray_output none
+# bar {
+#     i3bar_command i3bar -t
+#     status_command i3blocks
+#     position          top
+#     workspace_buttons yes
+#     strip_workspace_numbers yes
+#     binding_mode_indicator yes
+#     height $bheight
+#     tray_output none
 
-    font pango:$barfont
-    colors {
-        background $background
-        statusline $bartext
-        separator  $background
+#     font pango:$barfont
+#     colors {
+#         background $background
+#         statusline $bartext
+#         separator  $background
 
-#       class                border      background  text
-        focused_workspace    $background $background $barfoc
-        active_workspace     $background $background $barfoc
-        inactive_workspace   $background $background $ufocus
-        urgent_workspace     $background $background $warning
-    }
-}
+# #       class                border      background  text
+#         focused_workspace    $background $background $barfoc
+#         active_workspace     $background $background $barfoc
+#         inactive_workspace   $background $background $ufocus
+#         urgent_workspace     $background $background $warning
+#     }
+# }
 
 #######################################################################
 #                           Sleep Modes                               #

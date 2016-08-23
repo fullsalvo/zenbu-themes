@@ -31,7 +31,8 @@ colors:
     normal:     "#bcc0bf"
     bold:       "#ede3ca"
 
-barback:        "#293436FF"
+barback:        "293436"
+baralpha:       "FF"
 border:         "#ac896a"
 ufocus:         "#bed5db"
 

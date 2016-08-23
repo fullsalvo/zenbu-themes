@@ -30,7 +30,8 @@ colors:
     normal:      "#aebbd3"
     bold:        "#cdddfa"
 
-barback: "#4a4b4d"
+barback: "4a4b4d"
+baralpha: "FF"
 
 wallprog: "hsetroot"
 wallmode: "-solid"

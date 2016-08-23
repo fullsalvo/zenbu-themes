@@ -30,7 +30,8 @@ colors:
     normal:     "#c5b7af"
     bold:       "#f7e5db"
 
-barback:        "#000000cc"
+barback:        "000000"
+baralpha:       "cc"
 bartext:        "{` {{ colors }}['foreground'] `}"
 barfoc:         "{` {{ colors }}[{{ colors }}['primary']]['normal'] `}"
 warning:        "{` {{ colors }}[{{ colors }}['secondary']]['normal'] `}"

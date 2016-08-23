@@ -28,7 +28,8 @@ colors:
     normal:     "#c4c0c0"
     bold:       "#f6f0f0"
 
-barback:        "#00000000"
+barback:        "000000"
+baralpha:       "00"
 border:         "#d4d7e4"
 unfocused:      "#526181"
 

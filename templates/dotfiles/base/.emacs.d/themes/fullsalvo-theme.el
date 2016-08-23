@@ -107,13 +107,13 @@
 
    ;; Dired
    ;; -----
-   `(dired-directory ((t (:foreground ,text :weight extrabold))))
-   `(dired-header ((t (:foreground "white"  :background ,blue :weight bold))))
+   `(dired-directory ((t (:foreground ,green))))
+   `(dired-header ((t (:foreground "white"  :background ,blue))))
    `(dired-ignored ((t (:foreground ,text-3))))
    `(dired-flagged ((t (:foreground ,red :weight bold))))
    `(dired-marked ((t (:background ,blue :foreground "white" :weight normal))))
    `(dired-perm-write ((t (:foreground ,yellow :weight ultra-bold))))
-   `(dired-symlink ((t (:foreground ,light-blue :weight normal))))
+   `(dired-symlink ((t (:foreground ,magenta :weight normal))))
    `(dired-warning ((t (:inherit (font-lock-warning-face)))))
 
    ;; Lines
