@@ -1,31 +1,30 @@
-name:          "Flower"
+name:          "Wave"
 colors:
-  primary:     ""
-  secondary:   ""
-  background:  ""
+  primary:     "green"
+  secondary:   "yellow"
+  background:  "#18292e"
   black:
-    normal:    ""
-    bold:      ""
+    normal:    "#3d3d3d"
+    bold:      "#4b4b4b"
   red:
-    normal:    ""
-    bold:      ""
+    normal:    "#ea7c67"
+    bold:      "#ea9e90"
   green:
-    normal:    ""
-    bold:      ""
+    normal:    "#78aaa4"
+    bold:      "#9bdcd3"
   yellow:
-    normal:    ""
-    bold:      ""
+    normal:    "#b79d7d"
+    bold:      "#e9cfaf"
   blue:
-    normal:    ""
-    bold:      ""
+    normal:    "#3288aa"
+    bold:      "#40b0dc"
   magenta:
-    normal:    ""
-    bold:      ""
+    normal:    "#837ca3"
+    bold:      "#9c98ae"
   cyan:
-    normal:    ""
-    bold:      ""
-  white:
-    normal:    ""
-    bold:      ""
+    normal:    "#569aa9"
+    bold:      "#6fc7db"
 
-wallpaper:     "/home/fullsalvo/Pictures/Walls/Flower.jpg"
+wallpaper:     "/home/fullsalvo/Pictures/Walls/WaveGirl.jpg"
+prompt:        "green"
+baralpha:      "00"

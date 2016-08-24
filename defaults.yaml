@@ -1,9 +1,9 @@
 # Fonts
 term_fonts:
-  - "bitbuntu"
+  - "fxd"
   - "JackeyFont"
 antialias: "true"
-pixelsize: 8
+pixelsize: 7
 spacing: "{` 1 if {{ term_fonts }}[0] == 'bitbuntu' else 0 `}"
 
 # Colors
@@ -47,7 +47,7 @@ baralpha:       "55"
 warning:        "#e84f4f"
 bartext:        "#eeeeee"
 barfoc:         "{{ bartext }}"
-unfocused:      "#5c5c5c"
+unfocused:      "{` {{ colors }}['black']['normal'] `}"
 
 # Rofi
 
@@ -79,7 +79,7 @@ wallprog:       "feh"
 
 # Emacs
 
-emacsfont:      "bitbuntu"
+emacsfont:      "fxd"
 emacssize:      "8"
 
 # Notifications

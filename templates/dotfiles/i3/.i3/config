@@ -59,6 +59,7 @@ focus_follows_mouse no
 exec xset s off -dpms
 exec $home/.bin/batnotif &
 exec xset +fp /home/fullsalvo/.fonts && xset fp rehash &
+for_window [class="Lxappearance"] floating enable
 
 #######################################################################
 #                           Fallback Font                             #
