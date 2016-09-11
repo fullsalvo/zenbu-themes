@@ -1,35 +1,36 @@
-name:           "Tools"
+name:                 "Tools"
 colors:
-  primary:      "cyan"
-  secondary:    "white"
-  background:   "#191921"
+  primary:            "cyan"
+  secondary:          "white"
+  background:         "#191921"
   black:
-    normal:     "#4b4b4b"
-    bold:       "#5f5f5f"
+    normal:           "#4b4b4b"
+    bold:             "#5f5f5f"
   red:
-    normal:     "#a89297"
-    bold:       "#dabdb3"
+    normal:           "#a89297"
+    bold:             "#dabdb3"
   green:
-    normal:     "#b6bd97"
-    bold:       "#e2efb4"
+    normal:           "#b6bd97"
+    bold:             "#e2efb4"
   yellow:
-    normal:     "#b9bda9"
-    bold:       "#e9efd5"
+    normal:           "#b9bda9"
+    bold:             "#e9efd5"
   blue:
-    normal:     "#869baa"
-    bold:       "#b4cbdc"
+    normal:           "#869baa"
+    bold:             "#b4cbdc"
   magenta:
-    normal:     "#b8bbc3"
-    bold:       "#e8eaf5"
+    normal:           "#b8bbc3"
+    bold:             "#e8eaf5"
   cyan:
-    normal:     "#93a0aa"
-    bold:       "#becfdc"
+    normal:           "#93a0aa"
+    bold:             "#becfdc"
   white:
-    normal:     "#cbcbc1"
-    bold:       "#eeede1"
+    normal:           "#cbcbc1"
+    bold:             "#eeede1"
 
-wallpaper:      "/home/fullsalvo/Pictures/Walls/Scale.jpeg"
+wallpaper:            "/home/fullsalvo/Pictures/Walls/Scale.jpeg"
 
-border:         "{` {{ colors }}['yellow']['normal'] `}"
+border:               "{{ colors.magenta.normal }}"
+barunfoc:             "{{ colors.green.normal }}"
 
-ncmpcpp_accent: "blue"
+ncmpcpp_accent:       "blue"

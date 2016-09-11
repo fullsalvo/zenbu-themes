@@ -1,24 +1,25 @@
+name:                 "sailbirds"
 colors:
-  primary:      "cyan"
-  secondary:    "green"
+  primary:            "cyan"
+  secondary:          "green"
   red:
-    normal:     "#bdbdb3"
-    bold:       "#efefe2"
+    normal:           "#bdbdb3"
+    bold:             "#efefe2"
   green:
-    normal:     "#a0aaa5"
-    bold:       "#cfdcd5"
+    normal:           "#a0aaa5"
+    bold:             "#cfdcd5"
   yellow:
-    normal:     "#8ba3a9"
-    bold:       "#b4d3db"
+    normal:           "#8ba3a9"
+    bold:             "#b4d3db"
   blue:
-    normal:     "#7c9caa"
-    bold:       "#a0c9dc"
+    normal:           "#7c9caa"
+    bold:             "#a0c9dc"
   magenta:
-    normal:     "#7094aa"
-    bold:       "#90bfdc"
+    normal:           "#7094aa"
+    bold:             "#90bfdc"
   cyan:
-    normal:     "#6585aa"
-    bold:       "#82acdc"
+    normal:           "#6585aa"
+    bold:             "#82acdc"
 
-wallpaper:      "/home/fullsalvo/Pictures/Walls/Variations.png"
-wallmode:       "--bg-tile"
+wallpaper:            "/home/fullsalvo/Pictures/Walls/Variations.png"
+wallmode:             "--bg-tile"

@@ -1,8 +1,9 @@
 term_fonts:
-  - "cure"
-  - "Kochi Gothic"
-pixelsize: 11
-spacing: 0
+                      - "cure"
+                      - "Kochi Gothic"
+pixelsize:            11
+spacing:              0
 
-emacsfont: "lime"
-fffontsz: 12
+emacsfont:            &emacsfont "lime"
+dunstfont:            *emacsfont
+fffontsz:             12

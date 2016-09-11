@@ -1,4 +1,4 @@
-floating: true
-windec: true
-bordersize: 1
-shadows: "true"
+floating:             true
+windec:               true
+bordersize:           1
+shadows:              true

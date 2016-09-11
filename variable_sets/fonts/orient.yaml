@@ -1,7 +1,11 @@
 # Fonts
 term_fonts:
-  - "hlv"
-  - "Kochi Gothic"
-antialias: "false"
-pixelsize: "11"
-spacing: -3
+                      - "hlv"
+                      - "Kochi Gothic"
+antialias:            false
+pixelsize:            11
+spacing:              -3
+
+emacsfont:            &emacsfont "{{ term_fonts[0] }}"
+emacssize:            6
+dunstfont:             *emacsfont

@@ -1,38 +1,38 @@
-name: "tomoko"
+name:                 "tomoko"
 
 colors:
-  primary:       "cyan"
-  secondary:     "blue"
-  background:    "#353945"
-  foreground:    "#becde7"
+  primary:            "cyan"
+  secondary:          "blue"
+  background:         "#353945"
+  foreground:         "#becde7"
   black:
-    normal:      "#7e8798"
-    bold:        "#919498"
+    normal:           "#7e8798"
+    bold:             "#919498"
   red:
-    normal:      "#e64c4c"
-    bold:        "#e67676"
+    normal:           "#e64c4c"
+    bold:             "#e67676"
   green:
-    normal:      "#36eb8c"
-    bold:        "#79ebaf"
+    normal:           "#36eb8c"
+    bold:             "#79ebaf"
   yellow:
-    normal:      "#c2f139"
-    bold:        "#d3f17b"
+    normal:           "#c2f139"
+    bold:             "#d3f17b"
   blue:
-    normal:      "#4591e7"
-    bold:        "#79ace7"
+    normal:           "#4591e7"
+    bold:             "#79ace7"
   magenta:
-    normal:      "#9e3f69"
-    bold:        "#9e607c"
+    normal:           "#9e3f69"
+    bold:             "#9e607c"
   cyan:
-    normal:      "#63decd"
-    bold:        "#90ded3"
+    normal:           "#63decd"
+    bold:             "#90ded3"
   white:
-    normal:      "#aebbd3"
-    bold:        "#cdddfa"
+    normal:           "#aebbd3"
+    bold:             "#cdddfa"
 
-barback: "4a4b4d"
-baralpha: "FF"
+barback:              "4a4b4d"
+baralpha:             "FF"
 
-wallprog: "hsetroot"
-wallmode: "-solid"
-wallpaper: "\"#b3b7bd\""
+wallprog:             "hsetroot"
+wallmode:             "-solid"
+wallpaper:            "\"#b3b7bd\""

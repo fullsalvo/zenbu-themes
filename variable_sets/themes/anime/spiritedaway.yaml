@@ -1,40 +1,40 @@
-name:           "Spirited Away"
+name:                 "Spirited Away"
 colors:
-  primary:      "cyan"
-  secondary:    "magenta"
-  background:   "#1f1f1f"
+  primary:            "cyan"
+  secondary:          "magenta"
+  background:         "#1f1f1f"
   black:
-    normal:     "#303030"
-    bold:       "#474747"
+    normal:           "#303030"
+    bold:             "#474747"
   red:
-    normal:     "#b5845d"
-    bold:       "#e7a876"
+    normal:           "#b5845d"
+    bold:             "#e7a876"
   green:
-    normal:     "#c6b69b"
-    bold:       "#f8e3c2"
+    normal:           "#c6b69b"
+    bold:             "#f8e3c2"
   yellow:
-    normal:     "#c6c6c0"
-    bold:       "#f8f8f0"
+    normal:           "#c6c6c0"
+    bold:             "#f8f8f0"
   blue:
-    normal:     "#bec2b3"
-    bold:       "#eef4e1"
+    normal:           "#bec2b3"
+    bold:             "#eef4e1"
   magenta:
-    normal:     "#a5aaa4"
-    bold:       "#d5dcd4"
+    normal:           "#a5aaa4"
+    bold:             "#d5dcd4"
   cyan:
-    normal:     "#89aa8a"
-    bold:       "#b1dcb2"
+    normal:           "#89aa8a"
+    bold:             "#b1dcb2"
   white:
-    normal:     "#e0e0e0"
-    bold:       "#eeeeee"
+    normal:           "#e0e0e0"
+    bold:             "#eeeeee"
 
-barback:        "1f1f1f"
-baralpha:       "aa"
-border:         "#89aa9a"
-unfocused:      "#a5aaa4"
+barback:              "1f1f1f"
+baralpha:             "aa"
+border:               "#89aa9a"
+unfocused:            "#a5aaa4"
 
-bordersize:     "4"
+bordersize:           4
 
-wallpaper:      "/home/fullsalvo/Pictures/Anime/Horizontal/SpiritedAway.png"
+wallpaper:            "/home/fullsalvo/Pictures/Anime/Horizontal/SpiritedAway.png"
 
-prompt:         "cyan"
+prompt:               "cyan"

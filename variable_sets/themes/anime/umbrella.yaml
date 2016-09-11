@@ -1,32 +1,32 @@
-name:         "Umbrella"
+name:                 "Umbrella"
 colors:
-  primary:      "red"
-  secondary:    "white"
-  background:   "#080708"
+  primary:            "red"
+  secondary:          "white"
+  background:         "#080708"
   black:
-    normal:     "#3c3c3c"
-    bold:       "#6d6d6d"
+    normal:           "#3c3c3c"
+    bold:             "#6d6d6d"
   red:
-    normal:     "#843136"
-    bold:       "#a23c42"
+    normal:           "#843136"
+    bold:             "#a23c42"
   green:
-    normal:     "#304d4f"
-    bold:       "#477275"
+    normal:           "#304d4f"
+    bold:             "#477275"
   yellow:
-    normal:     "#b5a241"
-    bold:       "#d2be57"
+    normal:           "#b5a241"
+    bold:             "#d2be57"
   blue:
-    normal:     "#324f78"
-    bold:       "#4870ab"
+    normal:           "#324f78"
+    bold:             "#4870ab"
   magenta:
-    normal:     "#454064"
-    bold:       "#605a8c"
+    normal:           "#454064"
+    bold:             "#605a8c"
   cyan:
-    normal:     "#7daeaf"
-    bold:       "#9ebbbb"
+    normal:           "#7daeaf"
+    bold:             "#9ebbbb"
   white:
-    normal:     "#c8c2c1"
-    bold:       "#ebe2e7"
+    normal:           "#c8c2c1"
+    bold:             "#ebe2e7"
 
-prompt:         "red"
-wallpaper:      "/home/fullsalvo/Pictures/Anime/Horizontal/RikkaColors.png"
+prompt:               "red"
+wallpaper:            "/home/fullsalvo/Pictures/Anime/Horizontal/RikkaColors.png"

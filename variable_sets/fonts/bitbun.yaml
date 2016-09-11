@@ -1,10 +1,11 @@
 term_fonts:
-  - "bitbuntu"
-  - "JackeyFont"
-pixelsize: 8
-spacing: 1
+                      - "bitbuntu"
+                      - "JackeyFont"
+pixelsize:            8
+spacing:              1
 
-emacsfont: "bitbuntu"
+emacsfont:            &emacsfont "bitbuntu"
+dunstfont:            *emacsfont
 
-fffontsz: "10"
-spfs: "10"
+fffontsz:             10
+spfs:                 10

@@ -1,9 +1,10 @@
 # Fonts
 term_fonts:
-  - "Creep"
-  - "Kochi Gothic"
-antialias: "true"
-pixelsize: 11
-spacing: 1
+                      - "Creep"
+                      - "Kochi Gothic"
+antialias:            true
+pixelsize:            11
+spacing:              1
 
-emacsfont:      "Creep"
+emacsfont:            &emacsfont "Creep"
+dunstfont:            *emacsfont

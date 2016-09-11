@@ -1,0 +1,42 @@
+name:                 "Stool"
+colors:
+  background:         "#eeeeee"
+  foreground:         "#858585"
+  cursor:             "#858585"
+  black:
+    normal:           "#4b4b4b"
+    bold:             "#5f5f5f"
+  red:
+    normal:           "#aa8862"
+    bold:             "#dcb07e"
+  green:
+    normal:           "#aa9574"
+    bold:             "#dcc096"
+  yellow:
+    normal:           "#ada188"
+    bold:             "#dfcfaf"
+  blue:
+    normal:           "#7a9099"
+    bold:             "#8ea7b2"
+  magenta:
+    normal:           "#aeb0ab"
+    bold:             "#d8dcd5"
+  cyan:
+    normal:           "#98a9a1"
+    bold:             "#c4dbd0"
+  white:
+    normal:           "#989ea5"
+    bold:             "#bcc4cc"
+
+wallpaper:            "/home/fullsalvo/Pictures/Walls/Stool.jpeg"
+prompt:               "cyan"
+
+barback:              "eeeeee"
+baralpha:             "FF"
+bartext:              &bartext "#000000"
+barfoc:               *bartext
+barshad:              true
+
+hlline:               "#cecece"
+shadopac:             0.5
+shadhue:              0.1

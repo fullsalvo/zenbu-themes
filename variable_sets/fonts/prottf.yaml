@@ -1,0 +1,9 @@
+term_fonts:
+                      - "ProfontIIx"
+                      - "JackeyFont"
+pixelsize:            10
+
+emacsfont:            &emacsfont "ProfontIIx"
+emacssize:            7
+dunstfont:            *emacsfont
+fffont:               "ProfontIIx"

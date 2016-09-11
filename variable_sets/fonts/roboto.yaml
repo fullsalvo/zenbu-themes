@@ -1,6 +1,7 @@
 term_fonts:
-  - "Roboto Mono"
-pixelsize: 11
-spacing: 0
+                      - "Roboto Mono"
+pixelsize:            11
+spacing:              0
 
-emacsfont: "Roboto Mono"
+emacsfont:            &emacsfont "Roboto Mono"
+dunstfont:             *emacsfont

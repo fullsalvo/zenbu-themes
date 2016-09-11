@@ -1,13 +1,13 @@
 term_fonts:
-  - "Lemon"
-  - "Kochi Gothic"
-antialias: "false"
-pixelsize: 8
-spacing: 1
+                      - "Lemon"
+                      - "Kochi Gothic"
+antialias:            false
+pixelsize:            8
+spacing:              1
 
-emacsfont: "Lime"
-dunstfont: "Lemon"
-dunstfsize: 8
+emacsfont:            "Lime"
+dunstfont:            "Lemon"
+dunstfsize:           8
 
-fffontsz: 12
-spfs: 12
+fffontsz:             12
+spfs:                 12

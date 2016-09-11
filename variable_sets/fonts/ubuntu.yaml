@@ -1,0 +1,7 @@
+term_fonts:
+                      - "Ubuntu Mono"
+                      - "JackeyFont"
+pixelsize:            10
+emacsfont:            &emacsfont "Ubuntu Mono"
+dunstfont:            *emacsfont
+fffont:               "Ubuntu Mono"
