@@ -1,203 +1,207 @@
 # Fonts
 term_fonts:
-  - "fxd"
-  - "JackeyFont"
-antialias: "true"
-pixelsize: 7
-spacing: "{` 1 if {{ term_fonts }}[0] == 'bitbuntu' else 0 `}"
+                      - "hlv"
+                      - "JackeyFont"
+antialias:            true
+pixelsize:            7
+spacing:              -3
 
 # Colors
-name:           "fullsalvo"
+name:                 "fullsalvo"
 
 colors:
-  primary:      "blue"
-  secondary:    "red"
-  background:   "#2e2e2e"
-  foreground:   "#eeeeee"
-  cursor:       "#eeeeee"
+  primary:            "blue"
+  secondary:          "red"
+  background:         "#2e2e2e"
+  foreground:         "#eeeeee"
+  cursor:             "#eeeeee"
   black:
-    normal:     "#4b4b4b"
-    bold:       "#5f5f5f"
+    normal:           "#4b4b4b"
+    bold:             "#5f5f5f"
   red:
-    normal:     "#a06e6e"
-    bold:       "#d88383"
+    normal:           "#a06e6e"
+    bold:             "#d88383"
   green:
-    normal:     "#969b6a"
-    bold:       "#b5bd6a"
+    normal:           "#969b6a"
+    bold:             "#b5bd6a"
   yellow:
-    normal:     "#ded997"
-    bold:       "#fafbb9"
+    normal:           "#ded997"
+    bold:             "#fafbb9"
   blue:
-    normal:     "#71899d"
-    bold:       "#8da7be"
+    normal:           "#71899d"
+    bold:             "#8da7be"
   magenta:
-    normal:     "#8a7e8f"
-    bold:       "#b49dbb"
+    normal:           "#8a7e8f"
+    bold:             "#b49dbb"
   cyan:
-    normal:     "#b2cccd"
-    bold:       "#d6fff8"
+    normal:           "#b2cccd"
+    bold:             "#d6fff8"
   white:
-    normal:     "#9eb2cb"
-    bold:       "#cae5ff"
+    normal:           "#9eb2cb"
+    bold:             "#cae5ff"
 
 # Bar
 
-barback:        "000000"
-baralpha:       "55"
-warning:        "#e84f4f"
-bartext:        "#eeeeee"
-barfoc:         "{{ bartext }}"
-unfocused:      "{` {{ colors }}['black']['normal'] `}"
+barback:              "000000"
+baralpha:             "55"
+warning:              "#e84f4f"
+bartext:              &bartext "#eeeeee"
+barfoc:               *bartext
+unfocused:            "{{ colors.black.normal }}"
+barunfoc:             "{{ colors.black.normal }}"
 
 # Rofi
 
-rofibg:         "#222222"
+rofibg:               "{{ colors.background }}"
 
 # Window Manager
 
-inner:          "4"
-outer:          "4"
+inner:                4
+outer:                4
 
 # Floats
-floating: false
-windec: false
-shadows:        "false"
-shadopac:       "0.05"
+floating:             false
+windec:               false
+shadows:              false
+shadhue:              0.05
+shadopac:             0.8
+barshad:              false
 
-border:         "{` {{ colors }}[{{ colors }}['primary']]['normal'] `}"
-bordersize:     "2"
-dectext:        "#ffffff"
-mainfont:       "leggie 16"
-barfont:        "lime"
-barfs:          "6"
-barheight:      "18"
-winfmt:         " "
+border:               "{{ colors[colors.primary].normal }}"
+bordersize:           2
+dectext:              "#ffffff"
+mainfont:             "leggie 16"
+barfont:              "lime"
+barfs:                6
+barheight:            18
+winfmt:               " "
 
-wallpaper:      "/home/fullsalvo/Pictures/Walls/WindowRain.jpg"
-wallmode:       "--bg-fill"
-wallprog:       "feh"
+wallpaper:            "/home/fullsalvo/Pictures/Walls/WindowRain.jpg"
+wallmode:             "--bg-fill"
+wallprog:             "feh"
 
 # Emacs
 
-emacsfont:      "fxd"
-emacssize:      "8"
+emacsfont:            &emacsfont "hlv"
+emacssize:            7
+hlline:               "#1f1f1f"
 
 # Notifications
 
-dunstfont:      "{{ emacsfont }}"
-dunsthgap:      "{` {{ inner }} + {{ outer }} `}"
-dunstvgap:      "{` {{ inner }} + {{ outer }} + {{ barheight }} `}"
-dunstfsize:     "8"
+dunstfont:            *emacsfont
+dunsthgap:            "{{ inner + outer }}"
+dunstvgap:            "{{ inner + outer + barheight }}"
+dunstfsize:           8
 
 # Firefox
 
-fffont:         "{` {{ term_fonts }}[0] `}"
-fffontsz:       "10"
+fffont:               "{{ term_fonts[0] }}"
+fffontsz:             &fffontsz 10
 
 # Utility
 
 colornumbers:
-  black:    0
-  red:      1
-  green:    2
-  yellow:   3
-  blue:     4
-  magenta:  5
-  cyan:     6
-  white:    7
+  black:              0
+  red:                1
+  green:              2
+  yellow:             3
+  blue:               4
+  magenta:            5
+  cyan:               6
+  white:              7
 
 # Convenience
 
-bgc:        "{` {{ colors }}['background'] `}"
-fgc:        "{` {{ colors }}['foreground'] `}"
-csc:        "{` {{ colors }}['cursor'] `}"
+bgc:                  "{{ colors.background }}"
+fgc:                  "{{ colors.foreground }}"
+csc:                  "{{ colors.cursor }}"
 
-n_black:    "{` {{ colors }}['black']['normal'] `}"
-b_black:    "{` {{ colors }}['black']['bold'] `}"
-n_red:      "{` {{ colors }}['red']['normal'] `}"
-b_red:      "{` {{ colors }}['red']['bold'] `}"
-n_green:    "{` {{ colors }}['green']['normal'] `}"
-b_green:    "{` {{ colors }}['green']['bold'] `}"
-n_yellow:   "{` {{ colors }}['yellow']['normal'] `}"
-b_yellow:   "{` {{ colors }}['yellow']['bold'] `}"
-n_blue:     "{` {{ colors }}['blue']['normal'] `}"
-b_blue:     "{` {{ colors }}['blue']['bold'] `}"
-n_magenta:  "{` {{ colors }}['magenta']['normal'] `}"
-b_magenta:  "{` {{ colors }}['magenta']['bold'] `}"
-n_cyan:     "{` {{ colors }}['cyan']['normal'] `}"
-b_cyan:     "{` {{ colors }}['cyan']['bold'] `}"
-n_white:    "{` {{ colors }}['white']['normal'] `}"
-b_white:    "{` {{ colors }}['white']['bold'] `}"
+n_black:              "{{ colors.black.normal }}"
+b_black:              "{{ colors.black.bold }}"
+n_red:                "{{ colors.red.normal }}"
+b_red:                "{{ colors.red.bold }}"
+n_green:              "{{ colors.green.normal }}"
+b_green:              "{{ colors.green.bold }}"
+n_yellow:             "{{ colors.yellow.normal }}"
+b_yellow:             "{{ colors.yellow.bold }}"
+n_blue:               "{{ colors.blue.normal }}"
+b_blue:               "{{ colors.blue.bold }}"
+n_magenta:            "{{ colors.magenta.normal }}"
+b_magenta:            "{{ colors.magenta.bold }}"
+n_cyan:               "{{ colors.cyan.normal }}"
+b_cyan:               "{{ colors.cyan.bold }}"
+n_white:              "{{ colors.white.normal }}"
+b_white:              "{{ colors.white.bold }}"
 
-n_primary:  "{` {{ colors }}[{{ colors }}['primary']]['normal'] `}"
-b_primary:  "{` {{ colors }}[{{ colors }}['primary']]['bold'] `}"
-n_secondary:  "{` {{ colors }}[{{ colors }}['secondary']]['normal'] `}"
-b_secondary:  "{` {{ colors }}[{{ colors }}['secondary']]['bold'] `}"
+n_primary:            "{{ colors[colors.primary].normal }}"
+b_primary:            "{{ colors[colors.primary].bold }}"
+n_secondary:          "{{ colors[colors.secondary].normal }}"
+b_secondary:          "{{ colors[colors.secondary].bold }}"
 
-text_primary:         "{` {{ colors }}['primary'] `}"
-text_secondary:       "{` {{ colors }}['secondary'] `}"
-ncmpcpp_primary_n:    "{` {{ colornumbers }}[{{ colors }}['primary']] + 1 `}"
-ncmpcpp_secondary_n:  "{` {{ colornumbers }}[{{ colors }}['secondary']] + 1 `}"
+text_primary:         "{{ colors.primary }}"
+text_secondary:       "{{ colors.secondary }}"
+ncmpcpp_primary_n:    "{{ colornumbers[colors.primary] + 1 }}"
+ncmpcpp_secondary_n:  "{{ colornumbers[colors.secondary] + 1 }}"
 ncmpcpp_accent:       "white"
 
-startpage:        "{` {{ colors }}[{{ colors }}['primary']]['normal'] `}"
-spfs:             "10"
-mascot: False
+startpage:            "{{ colors[colors.primary].normal }}"
+spfs:                 *fffontsz
+mascot:               false
 
 # Shell
-tmux:             "{` {{ colornumbers }}[{{ colors }}['primary']] `}"
-prompt:           "blue"
+tmux:                 "{{ colornumbers[colors.primary] }}"
+prompt:               "blue"
 
 # Irssi
 
 irssi_colors:
   black:
-    normal: '%k'
-    bold:   '%K'
-    bg:     '%0'
+    normal:           '%k'
+    bold:             '%K'
+    bg:               '%0'
   red:
-    normal: '%r'
-    bold:   '%R'
-    bg:     '%1'
+    normal:           '%r'
+    bold:             '%R'
+    bg:               '%1'
   green:
-    normal: '%g'
-    bold:   '%G'
-    bg:     '%2'
+    normal:           '%g'
+    bold:             '%G'
+    bg:               '%2'
   yellow:
-    normal: '%y'
-    bold:   '%Y'
-    bg:     '%3'
+    normal:           '%y'
+    bold:             '%Y'
+    bg:               '%3'
   blue:
-    normal: '%b'
-    bold:   '%B'
-    bg:     '%4'
+    normal:           '%b'
+    bold:             '%B'
+    bg:               '%4'
   magenta:
-    normal: '%m'
-    bold:   '%M'
-    bg:     '%5'
+    normal:           '%m'
+    bold:             '%M'
+    bg:               '%5'
   cyan:
-    normal: '%c'
-    bold:   '%C'
-    bg:     '%6'
+    normal:           '%c'
+    bold:             '%C'
+    bg:               '%6'
   white:
-    normal: '%w'
-    bold:   '%W'
-    bg:     '%7'
+    normal:           '%w'
+    bold:             '%W'
+    bg:               '%7'
 
 irssi_colornumbers:
-  white: 0
-  black: 1
-  blue: 2
-  green: 3
-  red: 5
-  magenta: 6
-  yellow: 7
-  cyan: 10
+  white:              0
+  black:              1
+  blue:               2
+  green:              3
+  red:                5
+  magenta:            6
+  yellow:             7
+  cyan:               10
 
-irssi_default:      "{` {{ irssi_colornumbers }}[{{ colors }}['primary']] `}"
-irssi_primary_n:    "{` {{ irssi_colors }}[{{ colors }}['primary']]['normal'] `}"
-irssi_primary_b:    "{` {{ irssi_colors }}[{{ colors }}['primary']]['bold'] `}"
-irssi_primary_bg:   "{` {{ irssi_colors }}[{{ colors }}['primary']]['bg'] `}"
-irssi_secondary_n:  "{` {{ irssi_colors }}[{{ colors }}['secondary']]['normal'] `}"
-irssi_secondary_b:  "{` {{ irssi_colors }}[{{ colors }}['secondary']]['bold'] `}"
-irssi_secondary_bg: "{` {{ irssi_colors }}[{{ colors }}['secondary']]['bg'] `}"
+irssi_default:        "{{ irssi_colornumbers[colors.primary] }}"
+irssi_primary_n:      "{{ irssi_colors[colors.primary].normal }}"
+irssi_primary_b:      "{{ irssi_colors[colors.primary].bold }}"
+irssi_primary_bg:     "{{ irssi_colors[colors.primary].bg }}"
+irssi_secondary_n:    "{{ irssi_colors[colors.secondary].normal }}"
+irssi_secondary_b:    "{{ irssi_colors[colors.secondary].bold }}"
+irssi_secondary_bg:   "{{ irssi_colors[colors.secondary].bg }}"
