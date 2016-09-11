@@ -1,4 +1,3 @@
-{{=[[ ]]=}}
 # default foreground color (%N) - -1 is the "default terminal color"
 default_color = "-1";
 
@@ -65,7 +64,7 @@ abstracts = {
   # ban/ban exception/invite list mask is printed
   ban = "$*";
 
-  action_core = "[[ irssi_primary_n ]]─┄┄ %n$*";
+  action_core = "{{ irssi_primary_n }}─┄┄ %n$*";
 
   ########### messages #################################
 
@@ -74,11 +73,11 @@ abstracts = {
 
   # $0 = nick mode, $1 = nick
   ownmsgnick = "{msgnick $0 $1}";
-  ownnick = "[[ irssi_primary_n ]]$*%n";
+  ownnick = "{{ irssi_primary_n }}$*%n";
 
   # public message in channel, $0 = nick mode, $1 = nick
   pubmsgnick = "{msgnick $0 $1}";
-  pubnick = "[[ irssi_secondary_n ]]$*%n";
+  pubnick = "{{ irssi_secondary_n }}$*%n";
 
   # public highlighted message in channel
   pubmsghinick = "{msgnick $0 $1}";
@@ -188,21 +187,21 @@ abstracts = {
   topicsbstart = "%k─┄┄$*";
   topicsbend = "$*%b%k┄┄─";
 
-  prompt = " [[ irssi_primary_n ]]$* -%n ";
+  prompt = " {{ irssi_primary_n }}$* -%n ";
 
   sb = " %n$* ";
   sbmode = "  %g%g+%n$* ";
   sbaway = " %g/* zZzZ */%n";
-  sbservertag = " [[ irssi_primary_n ]]$0%n";
+  sbservertag = " {{ irssi_primary_n }}$0%n";
   sbnickmode = "$0";
 
   # Usercount
   sb_usercount = "{sb %_$0%_ nicks ($1-)}";
   sb_uc_ircops = "%_*%_$*";
-  sb_uc_ops = "%_@[[ irssi_primary_n ]]$*%n";
-  sb_uc_halfops = "%_%%[[ irssi_primary_n ]]$*%n";
-  sb_uc_voices = "%_+[[ irssi_primary_n ]]$*%n";
-  sb_uc_normal = "%_[[ irssi_primary_n ]]$*%n";
+  sb_uc_ops = "%_@{{ irssi_primary_n }}$*%n";
+  sb_uc_halfops = "%_%%{{ irssi_primary_n }}$*%n";
+  sb_uc_voices = "%_+{{ irssi_primary_n }}$*%n";
+  sb_uc_normal = "%_{{ irssi_primary_n }}$*%n";
   sb_uc_space = " ";
 
   # activity in statusbar

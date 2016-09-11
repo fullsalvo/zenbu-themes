@@ -1,7 +1,4 @@
 #Define colors in an easier-to-use syntax
-{{=<% %>=}}
-
-#Define colors in an easier-to-use syntax
 
 # ESC="$(echo -en '\e')"
 # BLACK="${ESC}[30m"
@@ -19,5 +16,5 @@
 
 # PS1='\w\[${BLUE}\] »» \[${RESET}\]'
 # PS1='\w\[${BLUE}\] ─── \[${RESET}\]'
-PS1='%F{<% prompt %>} ┄─┄┄ %F{reset_color}'
-RPROMPT=' %~'
+{{ "PS1='%F{" + prompt + "} ┄─┄┄ %F{reset_color}'" }}
+ RPROMPT=' %~'

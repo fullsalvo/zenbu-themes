@@ -1,14 +1,13 @@
 #!/usr/bin/env python3
-{{ = <% %> = }}
 
 import i3ipc
 
 # Create the Connection object that can be used to send commands and subscribe
 # to events.
 i3 = i3ipc.Connection()
-coloractive = '%{F<% barfoc %>}'
-colorinactive = '%{F<% unfocused %>}'
-colorwarning = '%{F<% warning %>}'
+coloractive = '%{F{{ barfoc }}{{ '}' }}'
+colorinactive = '%{F{{ barunfoc }}{{ '}' }}'
+colorwarning = '%{F{{ warning }}{{ '}' }}'
 
 # Define a callback to be called when you switch workspaces.
 def on_workspace_focus(self, e):
@@ -28,7 +27,6 @@ def on_workspace_focus(self, e):
         else:
             workspace_string += colorinactive + names[n] + '  '
 
-    workspace_string += '  '
     print(workspace_string, flush=True)
 
 workspace_string = '  '
@@ -47,7 +45,6 @@ for n in range(len(ws_nums)):
     else:
         workspace_string += colorinactive + names[n] + '  '
 
-workspace_string += '  '
 print(workspace_string, flush=True)
 
 # Subscribe to events

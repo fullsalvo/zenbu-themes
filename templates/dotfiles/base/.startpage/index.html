@@ -7,7 +7,7 @@
 </head>
 
 <body>
-  {{ #mascot }}<img class="mascot" src="waifu.png" align="right" hspace="70"/>{{ /mascot}}
+  {%- if mascot -%}<img class="mascot" src="waifu.png" align="right" hspace="70"/>{% endif %}
   <div class="books">
 	<ul>
 	  <li><a href="https://www.facebook.com/">facebook</a></li>

@@ -1,7 +1,7 @@
 ! Fonts
-URxvt.font:      {{ #term_fonts }}xft:{{ . }}:pixelsize={{ pixelsize }}:antialias={{ antialias }},{{ /term_fonts }}
+URxvt.font:      {%- for f in term_fonts -%}xft:{{ f }}:pixelsize={{ pixelsize }}:antialias={{ antialias }}{%- if f != term_fonts[-1] -%},{% endif %}{% endfor %}
 URxvt.boldFont:
-XTerm.font:      {{ #term_fonts }}xft:{{ . }}:pixelsize={{ pixelsize }}:antialias={{ antialias }},{{ /term_fonts }}
+XTerm.font:      {%- for f in term_fonts -%}xft:{{ f }}:pixelsize={{ pixelsize }}:antialias={{ antialias }}{%- if f != term_fonts[-1] -%},{% endif %}{% endfor %}
 XTerm.boldFont:
 
 ! General
@@ -23,7 +23,7 @@ Xft.rgba: rgb
 emacs.internalBorder: 0
 
 ! Rofi
-rofi.opacity: 80
+rofi.opacity: 100
 rofi.width: 40
 rofi.lines: 3
 rofi.font: {{ fffont }} {{ dunstfsize }}

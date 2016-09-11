@@ -254,7 +254,7 @@ url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
 }
 
 #urlbar {
-    color: {{ b_white }}!important;
+    color: {{ n_white }}!important;
     text-align: left !important;
     border-radius: 0px !important;
     border: none !important;
@@ -329,7 +329,7 @@ tabbrowser tabpanels, #appcontent > #content {
 
 .autocomplete-richlistitem[selected="true"], .autocomplete-richlistiem:hover{
     background-color: #fff!important;
-    color: {{ b_white }} !important;
+    color: {{ n_white }} !important;
     text-decoration: underline;
 }
 

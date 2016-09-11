@@ -1,14 +1,13 @@
-{{ = <% %> = }}
 #!/usr/bin/env python3
 
 import i3ipc
 
 i3 = i3ipc.Connection()
-colormode = '%{F<% warning %>}'
+colormode = '%{F{{ warning }}{{ '}' }}'
 
 def on_mode(self, e):
     if e.change != 'default':
-        modestr = colormode + e.change
+        modestr = colormode + '  ' + e.change
     else:
         modestr = ' '
     print(modestr, flush=True)
