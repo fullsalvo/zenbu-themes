@@ -1,4 +1,4 @@
-name:                 "Wave"
+name:                 "Corner"
 colors:
   primary:            "green"
   secondary:          "yellow"
@@ -25,7 +25,9 @@ colors:
     normal:           "#569aa9"
     bold:             "#6fc7db"
 
-wallpaper:            "/home/fullsalvo/Pictures/Walls/WaveGirl.jpg"
+wallpaper:            "/home/fullsalvo/Pictures/Walls/Corner.jpg"
 prompt:               "green"
 baralpha:             "ff"
+barunfoc:             "{{ colors.white.normal }}"
 barback:              "{{ colors.background | nohash }}"
+barshad:              true

@@ -43,6 +43,11 @@ rofi.color-urgent: {{ rofibg }}, {{ fgc }}, {{ rofibg }}, {{ n_secondary }}, {{ 
 *matcher.button:	 1
 *url-select.underline:	 true
 
+! Extra
+
+*.color254:     {{ bgc }}
+*.color255:     {{ fgc }}
+
 ! Colors
 *.borderColor:  {{ bgc }}
 *.background:   {{ bgc }}
