@@ -49,6 +49,8 @@ bartext:              &bartext "#eeeeee"
 barfoc:               *bartext
 unfocused:            "{{ colors.black.normal }}"
 barunfoc:             "{{ colors.black.normal }}"
+baruthick:            2
+barbarwid:           "{{  5*' ' }}"
 
 # Rofi
 
@@ -75,6 +77,7 @@ barfont:              "lime"
 barfs:                6
 barheight:            18
 winfmt:               " "
+barbars:              false
 
 wallpaper:            "/home/fullsalvo/Pictures/Walls/WindowRain.jpg"
 wallmode:             "--bg-fill"
@@ -97,6 +100,14 @@ dunstfsize:           8
 
 fffont:               "{{ term_fonts[0] }}"
 fffontsz:             &fffontsz 10
+
+startpage:            "{{ colors[colors.primary].normal }}"
+spfs:                 *fffontsz
+mascot:               false
+
+# Shell
+tmux:                 "{{ colornumbers[colors.primary] }}"
+prompt:               "blue"
 
 # Utility
 
@@ -143,14 +154,6 @@ text_secondary:       "{{ colors.secondary }}"
 ncmpcpp_primary_n:    "{{ colornumbers[colors.primary] + 1 }}"
 ncmpcpp_secondary_n:  "{{ colornumbers[colors.secondary] + 1 }}"
 ncmpcpp_accent:       "white"
-
-startpage:            "{{ colors[colors.primary].normal }}"
-spfs:                 *fffontsz
-mascot:               false
-
-# Shell
-tmux:                 "{{ colornumbers[colors.primary] }}"
-prompt:               "blue"
 
 # Irssi
 

@@ -40,3 +40,7 @@ barshad:              true
 hlline:               "#cecece"
 shadopac:             0.5
 shadhue:              0.1
+
+baruthick:            4
+barbars:              true
+barbarwid:            "{{ 7*' ' }}"

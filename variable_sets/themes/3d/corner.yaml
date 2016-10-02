@@ -31,3 +31,4 @@ baralpha:             "ff"
 barunfoc:             "{{ colors.white.normal }}"
 barback:              "{{ colors.background | nohash }}"
 barshad:              true
+barbars:              true

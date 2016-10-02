@@ -30,5 +30,6 @@ colors:
     normal:           "#a7a59c"
     bold:             "#d9d6ca"
 
+barunfoc:             "{{ colors.white.normal }}"
 wallpaper:            "/home/fullsalvo/Pictures/Walls/Endeavor.jpeg"
 ncmpcpp_accent:       "green"
