@@ -32,7 +32,7 @@ servers = (
     autoconnect = "no";
   },
   {
-    address = "tomokers.pw";
+    address = "geofront.xyz";
     chatnet = "bouncerizon";
     port = "2250";
     use_ssl = "yes";

@@ -5,9 +5,9 @@ import i3ipc
 # Create the Connection object that can be used to send commands and subscribe
 # to events.
 i3 = i3ipc.Connection()
-coloractive = '%{F{{ barfoc }}{{ '}' }}'
-colorinactive = '%{F{{ barunfoc }}{{ '}' }}'
-colorwarning = '%{F{{ warning }}{{ '}' }}'
+coloractive = '{{ '%{' }}{% if not barbars %}F{% else %}U{% endif %}{{ barfoc }}{{ '}' }}'
+colorinactive = '{{ '%{' }}{% if not barbars %}F{% else %}U{% endif %}{{ barunfoc }}{{ '}' }}'
+colorwarning = '{{ '%{' }}{% if not barbars %}F{% else %}U{% endif %}{{ warning }}{{ '}' }}'
 
 # Define a callback to be called when you switch workspaces.
 def on_workspace_focus(self, e):
@@ -21,11 +21,11 @@ def on_workspace_focus(self, e):
 
     for n in range(len(ws_nums)):
         if focused == n:
-            workspace_string += coloractive + names[n] + '  '
+            workspace_string += coloractive + {% if not barbars %}names[n]{% else %}{{ '\'%{+u}' + barbarwid + '%{-u}%{U-}\'' }}{% endif %} + '  '
         elif n in urg:
-            workspace_string += colorwarning + names[n] + '  '
+            workspace_string += colorwarning + {% if not barbars%}names[n]{% else %}{{ '\'%{+u}' + barbarwid + '%{-u}%{U-}\'' }}{% endif %} + '  '
         else:
-            workspace_string += colorinactive + names[n] + '  '
+            workspace_string += colorinactive + {% if not barbars%}names[n]{% else %}{{ '\'%{+u}' + barbarwid + '%{-u}%{U-}\'' }}{% endif %} + '  '
 
     print(workspace_string, flush=True)
 
@@ -39,11 +39,11 @@ names = [''.join([i for i in n['name'] if not i.isdigit()]) for n in workspaces]
 
 for n in range(len(ws_nums)):
     if focused == n:
-        workspace_string += coloractive + names[n] + '  '
+        workspace_string += coloractive + {% if not barbars%}names[n]{% else %}{{ '\'%{+u}' + barbarwid + '%{-u}%{U-}\'' }}{% endif %} + '  '
     elif n in urg:
-        workspace_string += colorwarning + names[n] + '  '
+        workspace_string += colorwarning + {% if not barbars%}names[n]{% else %}{{ '\'%{+u}' + barbarwid + '%{-u}%{U-}\'' }}{% endif %} + '  '
     else:
-        workspace_string += colorinactive + names[n] + '  '
+        workspace_string += colorinactive + {% if not barbars%}names[n]{% else %}{{ '\'%{+u}' + barbarwid + '%{-u}%{U-}\'' }}{% endif %} + '  '
 
 print(workspace_string, flush=True)
 
