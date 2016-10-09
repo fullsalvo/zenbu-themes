@@ -3,36 +3,40 @@ colors:
   primary:            "red"
   secondary:          "white"
   background:         "#151720"
+  foreground:         "#eeeeee"
+  cursor:             "#eeeeee"
   black:
     normal:           "#29294b"
     bold:             "#383b5f"
   red:
-    normal:           "#b25164"
-    bold:             "#e46b84"
+    normal:           "#b25f6f"
+    bold:             "#e48c9e"
   green:
-    normal:           "#526181"
-    bold:             "#6880b5"
+    normal:           "#6b4a57"
+    bold:             "#8c727c"
   yellow:
-    normal:           "#779ebe"
-    bold:             "#9fb8cd"
+    normal:           "#4f5567"
+    bold:             "#747884"
   blue:
-    normal:           "#344167"
-    bold:             "#4e5c84"
+    normal:           "#7986a1"
+    bold:             "#94a2c0"
   magenta:
-    normal:           "#5b3645"
-    bold:             "#7b4d5f"
+    normal:           "#a19abc"
+    bold:             "#c2bcdb"
   cyan:
-    normal:           "#446aaa"
-    bold:             "#5889dc"
+    normal:           "#9caebe"
+    bold:             "#bbc5cd"
   white:
     normal:           "#c4c0c0"
     bold:             "#f6f0f0"
 
 barback:              "000000"
 baralpha:             "00"
-border:               "#d4d7e4"
-unfocused:            "#526181"
+barunfoc:             "{{ colors.black.bold }}"
+border:               "{{ colors.white.bold }}"
+unfocused:            "{{ colors.magenta.normal }}"
 
+barbars:              true
 dectext:              "#29294b"
 bordersize:           2
 
