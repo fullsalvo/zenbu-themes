@@ -3,8 +3,8 @@ term_fonts:
                       - "hlv"
                       - "JackeyFont"
 antialias:            true
-pixelsize:            7
-spacing:              -3
+pixelsize:            "{{ 7 if term_fonts[0] == 'hlv' else 9 }}"
+spacing:              "{{ -3 if term_fonts[0] == 'hlv' else 0 }}"
 
 # Colors
 name:                 "fullsalvo"
@@ -51,6 +51,8 @@ unfocused:            "{{ colors.black.normal }}"
 barunfoc:             "{{ colors.black.normal }}"
 baruthick:            2
 barbarwid:           "{{  5*' ' }}"
+diffname:             false
+diffws:               ""
 
 # Rofi
 

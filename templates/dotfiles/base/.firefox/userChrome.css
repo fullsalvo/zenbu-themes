@@ -364,6 +364,11 @@ tabbrowser tabpanels, #appcontent > #content {
 /* Unselected Tab Names */
 #TabsToolbar .tabbrowser-tabs, #TabsToolbar .tabbrowser-tab:not([selected]) {
     color: {{ n_white }} !important;
+							   }
+
+/* Flash From New Tabs */
+browser, browser.display.background_color, tabbrowser tabpanels {
+    background-color: {{ bgc }} !important;
 }
 
 /*

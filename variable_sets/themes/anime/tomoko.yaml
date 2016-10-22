@@ -36,3 +36,5 @@ baralpha:             "FF"
 wallprog:             "hsetroot"
 wallmode:             "-solid"
 wallpaper:            "\"#b3b7bd\""
+barbars:              true
+baruthick:            3

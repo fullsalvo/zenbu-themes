@@ -17,7 +17,7 @@ def on_workspace_focus(self, e):
     ws_nums = [int(n['num']) for n in workspaces]
     focused = [n['visible'] for n in workspaces].index(True)
     urg = [n for n, _ in enumerate(workspaces) if workspaces[n]['urgent'] == True]
-    names = [''.join([i for i in n['name'] if not i.isdigit()]) for n in workspaces]
+    names ={% if not diffname %}[''.join([i for i in n['name'] if not i.isdigit()]) for n in workspaces]{% else %}len(ws_nums)*['{{ diffws }}']{% endif %}
 
     for n in range(len(ws_nums)):
         if focused == n:
@@ -35,7 +35,7 @@ workspaces = i3.get_workspaces()
 ws_nums = [int(n['num']) for n in workspaces]
 focused = [n['visible'] for n in workspaces].index(True)
 urg = [n for n, _ in enumerate(workspaces) if workspaces[n]['urgent'] == True]
-names = [''.join([i for i in n['name'] if not i.isdigit()]) for n in workspaces]
+names ={% if not diffname %}[''.join([i for i in n['name'] if not i.isdigit()]) for n in workspaces]{% else %}len(ws_nums)*['{{ diffws }}']{% endif %}
 
 for n in range(len(ws_nums)):
     if focused == n:

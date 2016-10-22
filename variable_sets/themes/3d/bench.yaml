@@ -1,0 +1,32 @@
+name:                 "bench"
+colors:
+  background:         "#171f1c"
+  foreground:         "#d2d2d2"
+  cursor:             "#d2d2d2"
+  black:
+    normal:           "#393939"
+    bold:             "#5f5f5f"
+  red:
+    normal:           "#634d41"
+    bold:             "#806452"
+  green:
+    normal:           "#599061"
+    bold:             "#6db177"
+  yellow:
+    normal:           "#787b54"
+    bold:             "#a0a470"
+  blue:
+    normal:           "#538d82"
+    bold:             "#6ab4a6"
+  magenta:
+    normal:           "#748695"
+    bold:             "#8a9fb1"
+  cyan:
+    normal:           "#6f8e7c"
+    bold:             "#8bb19a"
+  white:
+    normal:           "#9f9f9f"
+    bold:             "#d7d7d7"
+
+wallpaper:            "/home/fullsalvo/Pictures/Walls/Blurs/Bench.png"
+diffname:             true

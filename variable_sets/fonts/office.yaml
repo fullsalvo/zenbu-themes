@@ -1,0 +1,10 @@
+term_fonts:
+  - "Office Code Pro"
+  - "Kochi Gothic"
+pixelsize:            9
+spacing:              -1
+
+emacsfont:            &emacsfont "Office Code Pro"
+emacssize:            8
+
+dunstfont:            *emacsfont

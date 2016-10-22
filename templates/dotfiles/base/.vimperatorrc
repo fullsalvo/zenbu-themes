@@ -12,14 +12,20 @@ inoremap <C-c> <C-v><C-c>
 inoremap <C-v> <C-v><C-v>
 inoremap <S-Insert> <C-v><C-v>
 inoremap <C-x> <C-v><C-x>
-nnoremap t
+nnoremap t t<CR>
+nnoremap T t
 set hintchars=asdfhjkl
 
 highlight ContentSeparator border: none;
 highlight CmdLine background: {{ bgc }}; color: {{ fgc }};
 highlight StatusLine background: {{ bgc }}; color: {{ fgc }}; font-family: {{ term_fonts[0] }};
+highlight Normal background: {{ bgc }};
+highlight ModeMsg background: {{ border }}; color: {{ fgc }}; font-family: {{ term_fonts[0] }};
 highlight CmdLine>* font-family: "{{ term_fonts[0] }}";
 highlight Hint font-family: "{{ term_fonts[0] }}"; background: {{ fgc }}; color: {{ bgc }};
+highlight HintActive background-color: {{ n_red }};
+highlight HintElem background-color: {{ n_yellow }};
+highlight InfoMsg background-color: {{ bgc }}; color: {{ n_red }}; font-family: "{{ term_fonts[0] }}";
 
 iunmap <C-q>
 nnoremap <C-q> :js toggle_bottombar()<CR>

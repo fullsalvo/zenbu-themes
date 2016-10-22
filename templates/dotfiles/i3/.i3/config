@@ -44,11 +44,11 @@ set $wallprog   {{ wallprog }}
 set $maimbord   0.5,0.5,0.5
 
 # Workspace Labels
-set $ws1        
-set $ws2        
-set $ws3        
-set $ws4        
-set $ws5        
+set $ws1        
+set $ws2        
+set $ws3        
+set $ws4        
+set $ws5        
 
 #######################################################################
 #                           Miscellanious                             #
