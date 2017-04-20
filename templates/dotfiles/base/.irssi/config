@@ -8,7 +8,6 @@ settings = {
   "fe-text" = { actlist_sort = "refnum"; };
   "fe-common/core" = {
     theme = "fullsalvo";
-    bell_beeps = "no";
     timestamps = "no";
     autolog = "yes";
     completion_char = ",";
@@ -39,6 +38,24 @@ servers = (
     ssl_verify = "no";
     autoconnect = "yes";
     password = "mitya/rizon:{{ WZK_ZNC_PASS }}";
+  },
+  {
+	address = "geofront.xyz";
+	chatnet = "bouncerab";
+	port = "2250";
+	use_ssl = "yes";
+	ssl_verify = "no";
+	autoconnect = "yes";
+	password = "mitya/AnimeBytes:{{ WZK_ZNC_PASS }}";
+  },
+  {
+  address = "geofront.xyz";
+  chatnet = "bouncerscc";
+  port = "2250";
+  use_ssl = "yes";
+  ssl_verify = "no";
+  autoconnect = "no"
+  password = "mitya/sceneaccess:{{ WZK_ZNC_PASS }}";
   },
   {
 	address = "irc.rizon.net";
@@ -120,6 +137,9 @@ chatnets = {
     autosendcmd = "/^msg nickserv identify {{ WZK_ZNC_PASS }};wait 2000";
   };
   bouncer = { type = "IRC"; };
+  bouncerizon = { type = "IRC"; };
+  bouncerab = { type = "IRC"; };
+  bouncerscc = { type = "IRC"; };
 };
 hilights = (
   { text = "fullsalvo"; nick = "yes"; word = "yes"; },
@@ -178,5 +198,45 @@ windows = {
       }
     );
   };
+  5 = {
+    items = (
+      {
+	type = "CHANNEL";
+	chat_type = "IRC";
+	name = "#rmch";
+	tag = "bouncerizon";
+      }
+    );
+  };
+  6 = {
+    items = (
+      {
+	type = "CHANNEL";
+	chat_type = "IRC";
+	name = "#animebytes";
+	tag = "bouncerab";
+      }
+    );
+  };
+  7 = {
+    items = (
+      {
+	type = "CHANNEL";
+	chat_type = "IRC";
+	name = "#linux";
+	tag = "bouncerab";
+      }
+    );
+  };
+  # 8 = {
+  #   items = (
+  #     {
+  # 	type = "CHANNEL";
+  # 	chat_type = "IRC";
+  # 	name = "#announce";
+  # 	tag = "bouncerab";
+  #     }
+  #   );
+  # };
 };
 mainwindows = { 1 = { first_line = "0"; lines = "32"; }; };

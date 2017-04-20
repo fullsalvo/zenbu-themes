@@ -1,0 +1,14 @@
+term_fonts:
+                      - "boxxy"
+                      - "JackeyFont"
+antialias:            false
+pixelsize:            10
+spacing:              0
+
+emacsfont:            "boxxy"
+dunstfont:            "boxxy"
+dunstfsize:           12
+
+fffont:               "dina"
+fffontsz:             9
+spfs:                 11

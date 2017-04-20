@@ -39,9 +39,10 @@ rofi.color-urgent: {{ rofibg }}, {{ fgc }}, {{ rofibg }}, {{ n_secondary }}, {{ 
 ! Clickable Links
 *perl-ext-common:	 default,matcher,clipboard
 *keysym.Shift-Control-V: perl:clipboard:paste
-*urlLauncher:		 firefox
+*url-launcher:		 /usr/bin/firefox
 *matcher.button:	 1
 *url-select.underline:	 true
+*.matcher.rend.0:        Uline Bold fg4
 
 ! Extra
 
