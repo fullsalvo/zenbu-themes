@@ -31,13 +31,13 @@ colors:
     bold:             "#f7e5db"
 
 barback:              "000000"
-baralpha:             "cc"
+baralpha:             "ff"
 bartext:              "{{ colors.foreground }}"
 barfoc:               "{{ colors[colors.primary].normal }}"
 barunfoc:             "{{ colors.white.normal }}"
+unfocused:            "{{ colors.background }}"
 warning:              "{{ colors[colors.secondary].normal }}"
 
 wallpaper:            "/home/fullsalvo/Pictures/Walls/Fuji.jpg"
 
 prompt:               "red"
-diffname:             true

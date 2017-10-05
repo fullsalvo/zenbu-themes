@@ -42,7 +42,7 @@
 [urgency_normal]
     background = "{{ bgc }}"
     foreground = "{{ n_primary }}"
-    timeout = 10
+    timeout = 15
 
 [urgency_critical]
     background = "{{ bgc }}"

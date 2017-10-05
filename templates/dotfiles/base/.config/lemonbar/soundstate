@@ -1,0 +1,21 @@
+#!/bin/bash
+
+outstr=""
+volout=$($HOME/.bin/volume)
+
+if [[ "${volout}" != "MUTE" ]]; then
+{% if bitmap %}
+  outstr=" ${outstr} "
+else
+  outstr=" ${outstr} "
+{% else %}
+  outstr=" ${outstr} "
+else
+  outstr=" ${outstr} "
+{% endif %}
+fi
+
+outstr=${volout}${outstr}
+
+
+echo ${outstr}

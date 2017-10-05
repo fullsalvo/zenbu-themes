@@ -30,7 +30,6 @@ rofi.font: {{ fffont }} {{ dunstfsize }}
 rofi.padding: 50
 rofi.bw: {{ bordersize }}
 rofi.terminal: urxvt
-rofi.disable-history: true
 rofi.color-window: {{ rofibg }}, {{ border }}
 rofi.color-normal: {{ rofibg }}, {{ fgc }}, {{ rofibg }}, {{ n_primary }}, {{ rofibg }}
 rofi.color-active: {{ rofibg }}, {{ fgc }}, {{ rofibg }}, {{ b_primary }}, {{ rofibg }}
@@ -39,7 +38,7 @@ rofi.color-urgent: {{ rofibg }}, {{ fgc }}, {{ rofibg }}, {{ n_secondary }}, {{ 
 ! Clickable Links
 *perl-ext-common:	 default,matcher,clipboard
 *keysym.Shift-Control-V: perl:clipboard:paste
-*url-launcher:		 /usr/bin/firefox
+*url-launcher:		 /usr/bin/vivaldi
 *matcher.button:	 1
 *url-select.underline:	 true
 *.matcher.rend.0:        Uline Bold fg4

@@ -3,4 +3,4 @@
 pkill admiral &>/dev/null
 pkill lemonbar &>/dev/null
 
-$HOME/.local/bin/admiral | lemonbar -u {{ baruthick }} -p -B "#{{ baralpha }}{{ barback }}" -F "{{ bartext }}" -f "{{ barfont }}:size=7" -f "FontAwesome:size=8" -f "Siji-7" -f "Symbola-8" -g 1920x18+0+0 | sh
+$HOME/.local/bin/admiral | lemonbar -u {{ baruthick }} -p -B "#{{ baralpha }}{{ barback }}" -F "{{ bartext }}" -f "{{ barfont }}:size={{ barfs }}" -f "FontAwesome:size={{ barfs + 1 }}" -f "Siji-{{ barfs }}" -f "Symbola-{{ barfs }}" -g 1920x{{ barheight }}+0+0 | sh

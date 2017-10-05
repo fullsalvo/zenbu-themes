@@ -31,7 +31,7 @@ colors:
     normal:           "#bcc0bf"
     bold:             "#ede3ca"
 
-barback:              "293436"
+barback:              "{{ colors.background | nohash }}"
 baralpha:             "FF"
 border:               "#ac896a"
 ufocus:               "#bed5db"

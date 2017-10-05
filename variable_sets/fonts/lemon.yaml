@@ -1,9 +1,10 @@
 term_fonts:
                       - "Lemon"
                       - "Kochi Gothic"
-antialias:            false
+antialias:            true
 pixelsize:            8
 spacing:              1
+mainfont:             "Lemon 8"
 
 emacsfont:            "Lime"
 dunstfont:            "Lemon"
@@ -11,3 +12,4 @@ dunstfsize:           8
 
 fffontsz:             10
 spfs:                 10
+bitmap:               true

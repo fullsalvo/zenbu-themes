@@ -2,5 +2,8 @@ term_fonts:
                       - neep
                       - JackeyFont
 
-emacsfont:            &emacsfont "neep"
+emacsfont:            &emacsfont "lime"
+emacssize:            7
 dunstfont:            *emacsfont
+fffont:               cure
+bitmap:               true

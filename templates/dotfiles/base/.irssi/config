@@ -49,12 +49,21 @@ servers = (
 	password = "mitya/AnimeBytes:{{ WZK_ZNC_PASS }}";
   },
   {
+	address = "geofront.xyz";
+	chatnet = "bouncerapollo";
+	port = "2250";
+	use_ssl = "yes";
+	ssl_verify = "no";
+	autoconnect = "yes";
+	password = "mitya/Apollo:{{ WZK_ZNC_PASS }}";
+  },
+  {
   address = "geofront.xyz";
   chatnet = "bouncerscc";
   port = "2250";
   use_ssl = "yes";
   ssl_verify = "no";
-  autoconnect = "no"
+  autoconnect = "yes";
   password = "mitya/sceneaccess:{{ WZK_ZNC_PASS }}";
   },
   {
@@ -140,6 +149,7 @@ chatnets = {
   bouncerizon = { type = "IRC"; };
   bouncerab = { type = "IRC"; };
   bouncerscc = { type = "IRC"; };
+  bouncerapollo = { type = "IRC"; };
 };
 hilights = (
   { text = "fullsalvo"; nick = "yes"; word = "yes"; },
@@ -213,12 +223,22 @@ windows = {
       {
 	type = "CHANNEL";
 	chat_type = "IRC";
+	name = "#code";
+	tag = "bouncerizon";
+      }
+    );
+  };
+  7 = {
+    items = (
+      {
+	type = "CHANNEL";
+	chat_type = "IRC";
 	name = "#animebytes";
 	tag = "bouncerab";
       }
     );
   };
-  7 = {
+  8 = {
     items = (
       {
 	type = "CHANNEL";
@@ -228,15 +248,15 @@ windows = {
       }
     );
   };
-  # 8 = {
-  #   items = (
-  #     {
-  # 	type = "CHANNEL";
-  # 	chat_type = "IRC";
-  # 	name = "#announce";
-  # 	tag = "bouncerab";
-  #     }
-  #   );
-  # };
+  9 = {
+    items = (
+      {
+        type = "CHANNEL";
+	chat_type = "IRC";
+	name = "#APOLLO";
+	tag = "bouncerapollo";
+      }
+    );
+  };
 };
 mainwindows = { 1 = { first_line = "0"; lines = "32"; }; };

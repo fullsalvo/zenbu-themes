@@ -1,0 +1,39 @@
+name:                 "Rocky"
+
+colors:
+  primary:            "red"
+  secondary:          "green"
+  background:         "#0f1f24"
+  foreground:         "#92a19a"
+  cursor:             "#92a19a"
+  black:
+    normal:           "#434343"
+    bold:             "#616161"
+  red:
+    normal:           "#ac5252"
+    bold:             "#ca6e6e"
+  green:
+    normal:           "#79c490"
+    bold:             "#93e3b7"
+  yellow:
+    normal:           "#bfd491"
+    bold:             "#d8f4a2"
+  blue:
+    normal:           "#7e95f0"
+    bold:             "#b6bbff"
+  magenta:
+    normal:           "#af91da"
+    bold:             "#b4a2f4"
+  cyan:
+    normal:           "#95b3ba"
+    bold:             "#c1d1cf"
+  white:
+    normal:           "#dae0d8"
+    bold:             "#eeffdf"
+
+border:               "{{ colors.cyan.normal }}"
+unfocused:            "#1e3e48"
+barunfoc:             "{{ colors.cyan.normal }}"
+wallpaper:            "/home/fullsalvo/Pictures/Walls/Rocky.png"
+ncmpcpp_accent:       "blue"
+prompt:               "red"

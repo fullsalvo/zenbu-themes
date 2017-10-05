@@ -1,17 +1,18 @@
 # Fonts
 term_fonts:
-                      - "hlv"
-                      - "JackeyFont"
+                      - "Fira Mono"
+                      - "Noto Sans Mono CJK JP"
+                      - "Noto Sans Mono CJK KR"
 antialias:            true
 pixelsize:            "{{ 7 if term_fonts[0] == 'hlv' else 9 }}"
-spacing:              "{{ -3 if term_fonts[0] == 'hlv' else 0 }}"
+spacing:              "{{ -3 if term_fonts[0] == 'hlv' else 1 if term_fonts[0] == 'candy' else -1 if term_fonts[0] == 'Fira Mono' else 0 }}"
 
 # Colors
 name:                 "fullsalvo"
 
 colors:
   primary:            "blue"
-  secondary:          "red"
+  secondary:          "cyan"
   background:         "#2e2e2e"
   foreground:         "#eeeeee"
   cursor:             "#eeeeee"
@@ -47,12 +48,14 @@ baralpha:             "55"
 warning:              "#e84f4f"
 bartext:              &bartext "#eeeeee"
 barfoc:               *bartext
-unfocused:            "{{ colors.black.normal }}"
 barunfoc:             "{{ colors.black.normal }}"
 baruthick:            2
-barbarwid:           "{{  5*' ' }}"
+barbarwid:            "{{ 5*' ' }}"
 diffname:             false
-diffws:               ""
+diffws:               "▰"
+wspaces:              "{{ 2*' ' }}"
+bitmap:               false
+layout:               "default"
 
 # Rofi
 
@@ -72,13 +75,15 @@ shadopac:             0.8
 barshad:              false
 
 border:               "{{ colors[colors.primary].normal }}"
+unfocused:            "{{ colors.black.normal }}"
 bordersize:           2
 dectext:              "#ffffff"
-mainfont:             "leggie 16"
-barfont:              "lime"
-barfs:                6
+mainfont:             "Fira Code Bold 7"
+# barfont:              "Josefin Sans Regular"
+barfont:              "{{ 'Roboto Condensed Regular' if not bitmap else 'lime' }}"
+barfs:                7
 barheight:            18
-winfmt:               " "
+winfmt:               "  %class"
 barbars:              false
 
 wallpaper:            "/home/fullsalvo/Pictures/Walls/WindowRain.jpg"
@@ -87,7 +92,7 @@ wallprog:             "feh"
 
 # Emacs
 
-emacsfont:            &emacsfont "hlv"
+emacsfont:            &emacsfont "Fira Code"
 emacssize:            7
 hlline:               "#1f1f1f"
 
@@ -109,6 +114,7 @@ mascot:               false
 
 # Shell
 tmux:                 "{{ colornumbers[colors.primary] }}"
+tmux2:                "{{ colornumbers[colors.secondary] }}"
 prompt:               "blue"
 
 # Utility

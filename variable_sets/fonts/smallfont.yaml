@@ -1,9 +1,10 @@
 term_fonts:
                       - "cure"
-                      - "Kochi Gothic"
-pixelsize:            11
+                      - "PixelMplus10"
+pixelsize:            10
 spacing:              0
 
 emacsfont:            &emacsfont "lime"
 dunstfont:            *emacsfont
-fffontsz:             12
+fffontsz:             11
+bitmap:               true

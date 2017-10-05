@@ -5,6 +5,8 @@ pixelsize:            9
 spacing:              -1
 
 emacsfont:            &emacsfont "Office Code Pro"
-emacssize:            8
+emacssize:            7
 
 dunstfont:            *emacsfont
+
+bitmap:               false

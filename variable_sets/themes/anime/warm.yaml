@@ -6,8 +6,8 @@ colors:
     normal:           "#aa4b43"
     bold:             "#dc6156"
   green:
-    normal:           "#aa7c61"
-    bold:             "#dca07d"
+    normal:           "#42a2a4"
+    bold:             "#56d3d6"
   yellow:
     normal:           "#ab9585"
     bold:             "#ddc0ab"
@@ -15,8 +15,8 @@ colors:
     normal:           "#2b85aa"
     bold:             "#37acdc"
   magenta:
-    normal:           "#42a2a4"
-    bold:             "#56d3d6"
+    normal:           "#aa7c61"
+    bold:             "#dca07d"
   cyan:
     normal:           "#85a8a3"
     bold:             "#acdad3"

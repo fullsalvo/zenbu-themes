@@ -11,7 +11,7 @@ colorwarning = '{{ '%{' }}{% if not barbars %}F{% else %}U{% endif %}{{ warning 
 
 # Define a callback to be called when you switch workspaces.
 def on_workspace_focus(self, e):
-    workspace_string = '  '
+    workspace_string = '    '
     workspaces = i3.get_workspaces()
 
     ws_nums = [int(n['num']) for n in workspaces]
@@ -21,15 +21,15 @@ def on_workspace_focus(self, e):
 
     for n in range(len(ws_nums)):
         if focused == n:
-            workspace_string += coloractive + {% if not barbars %}names[n]{% else %}{{ '\'%{+u}' + barbarwid + '%{-u}%{U-}\'' }}{% endif %} + '  '
+            workspace_string += coloractive + {% if not barbars %}names[n]{% else %}{{ '\'%{+u}' + barbarwid + '%{-u}%{U-}\'' }}{% endif %} + '{{ wspaces }}'
         elif n in urg:
-            workspace_string += colorwarning + {% if not barbars%}names[n]{% else %}{{ '\'%{+u}' + barbarwid + '%{-u}%{U-}\'' }}{% endif %} + '  '
+            workspace_string += colorwarning + {% if not barbars%}names[n]{% else %}{{ '\'%{+u}' + barbarwid + '%{-u}%{U-}\'' }}{% endif %} + '{{ wspaces }}'
         else:
-            workspace_string += colorinactive + {% if not barbars%}names[n]{% else %}{{ '\'%{+u}' + barbarwid + '%{-u}%{U-}\'' }}{% endif %} + '  '
+            workspace_string += colorinactive + {% if not barbars%}names[n]{% else %}{{ '\'%{+u}' + barbarwid + '%{-u}%{U-}\'' }}{% endif %} + '{{ wspaces }}'
 
     print(workspace_string, flush=True)
 
-workspace_string = '  '
+workspace_string = '    '
 workspaces = i3.get_workspaces()
 
 ws_nums = [int(n['num']) for n in workspaces]
@@ -39,11 +39,11 @@ names ={% if not diffname %}[''.join([i for i in n['name'] if not i.isdigit()]) 
 
 for n in range(len(ws_nums)):
     if focused == n:
-        workspace_string += coloractive + {% if not barbars%}names[n]{% else %}{{ '\'%{+u}' + barbarwid + '%{-u}%{U-}\'' }}{% endif %} + '  '
+        workspace_string += coloractive + {% if not barbars%}names[n]{% else %}{{ '\'%{+u}' + barbarwid + '%{-u}%{U-}\'' }}{% endif %} + '{{ wspaces }}'
     elif n in urg:
-        workspace_string += colorwarning + {% if not barbars%}names[n]{% else %}{{ '\'%{+u}' + barbarwid + '%{-u}%{U-}\'' }}{% endif %} + '  '
+        workspace_string += colorwarning + {% if not barbars%}names[n]{% else %}{{ '\'%{+u}' + barbarwid + '%{-u}%{U-}\'' }}{% endif %} + '{{ wspaces }}'
     else:
-        workspace_string += colorinactive + {% if not barbars%}names[n]{% else %}{{ '\'%{+u}' + barbarwid + '%{-u}%{U-}\'' }}{% endif %} + '  '
+        workspace_string += colorinactive + {% if not barbars%}names[n]{% else %}{{ '\'%{+u}' + barbarwid + '%{-u}%{U-}\'' }}{% endif %} + '{{ wspaces }}'
 
 print(workspace_string, flush=True)
 

@@ -20,7 +20,7 @@
       (text-2 "#858D8A")
       (text-3 "{{ n_black }}")
       (text-4 "#2F3C42")
-      (text-highlight "#FFFFFF")
+      (text-highlight "#dddddd")
       (text-region "#434546")
       (text-dired "#A0A0A0")
       (input-text "{{ fgc }}")
@@ -64,7 +64,7 @@
    `(font-lock-comment-delimiter-face ((t (:inherit (font-lock-comment-face)))))
    `(font-lock-comment-face ((t (:foreground ,text-3))))
    `(font-lock-constant-face ((t (:foreground ,red))))
-   `(font-lock-doc-face ((t (:foreground ,blue))))
+   `(font-lock-doc-face ((t (:foreground ,green))))
    `(font-lock-function-name-face ((t (:foreground ,blue))))
    `(font-lock-keyword-face ((t (:foreground ,red))))
    `(font-lock-negation-char-face ((t nil)))
@@ -82,6 +82,7 @@
    ;; LaTeX
    ;; -----
    `(font-latex-math-face ((t (:foreground ,magenta))))
+   `(font-latex-string-face ((t (:foreground ,green))))
    `(font-latex-sectioning-1-face ((t (:family "{{ emacsfont }}" :height 80))))
    `(font-latex-sectioning-2-face ((t (:family "{{ emacsfont }}" :height 80))))
    `(font-latex-sectioning-3-face ((t (:family "{{ emacsfont }}" :height 80))))
@@ -100,6 +101,20 @@
 
    ;; Mode-Specific Font Locks
    ;; ============================
+
+   ;; Company
+   ;; -------
+   `(company-echo-common ((t (:foreground ,text-3))))
+   `(company-preview ((t (:background nil :foreground ,text-3))))
+   `(company-preview-common ((t (:inherit company-preview))))
+   `(company-preview-search ((t (:inherit company-preview))))
+   `(company-scrollbar-bg ((t (:background ,text-highlight))))
+   `(company-scrollbar-fg ((t (:background ,text-3))))
+   `(company-template-field ((t (:background nil :foreground ,text-3))))
+   `(company-tooltip ((t (:background nil :foreground ,text))))
+   `(company-tooltip-annotation ((t (:foreground ,text-3))))
+   `(company-tooltip-common ((t (:foreground ,red))))
+   `(company-tooltip-selection ((t (:background ,text-3))))
 
    ;; Parens
    ;; ------

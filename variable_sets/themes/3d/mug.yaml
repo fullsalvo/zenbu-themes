@@ -1,5 +1,7 @@
-name:                 "Stool"
+name:                 "Mug"
 colors:
+  primary:            "red"
+  secondary:          "magenta"
   background:         "#eeeeee"
   foreground:         "#858585"
   cursor:             "#858585"
@@ -20,7 +22,8 @@ colors:
     bold:             "#8ea7b2"
   magenta:
     normal:           "#aeb0ab"
-    bold:             "#d8dcd5"
+    # bold:             "#d8dcd5"
+    bold:             "#d3d7d0"
   cyan:
     normal:           "#98a9a1"
     bold:             "#c4dbd0"
@@ -28,7 +31,9 @@ colors:
     normal:           "#989ea5"
     bold:             "#bcc4cc"
 
-wallpaper:            "/home/fullsalvo/Pictures/Walls/Stool.jpeg"
+wallpaper:            "/home/fullsalvo/Pictures/Walls/Mug.jpeg"
+wallprog:             "hsetroot"
+wallmode:             "-fill"
 prompt:               "cyan"
 
 barback:              "eeeeee"

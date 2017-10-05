@@ -1,4 +1,6 @@
 floating:             true
+mainfont:             "{{ term_fonts[0] }} 16"
 windec:               true
-bordersize:           1
+bordersize:           0
 shadows:              true
+winfmt:               " "

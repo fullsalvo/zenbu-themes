@@ -7,4 +7,8 @@ pixelsize:            11
 spacing:              1
 
 emacsfont:            &emacsfont "Creep"
+emacssize:            10
 dunstfont:            *emacsfont
+dunstfsize:           10
+fffont:               "dweep"
+fffs:                 10
