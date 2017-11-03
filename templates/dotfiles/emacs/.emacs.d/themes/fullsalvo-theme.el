@@ -83,11 +83,11 @@
    ;; -----
    `(font-latex-math-face ((t (:foreground ,magenta))))
    `(font-latex-string-face ((t (:foreground ,green))))
-   `(font-latex-sectioning-1-face ((t (:family "{{ emacsfont }}" :height 80))))
-   `(font-latex-sectioning-2-face ((t (:family "{{ emacsfont }}" :height 80))))
-   `(font-latex-sectioning-3-face ((t (:family "{{ emacsfont }}" :height 80))))
-   `(font-latex-sectioning-4-face ((t (:family "{{ emacsfont }}" :height 80))))
-   `(font-latex-sectioning-5-face ((t (:family "{{ emacsfont }}" :height 80))))
+   `(font-latex-sectioning-1-face ((t (:family "{{ emacsfont }}"))))
+   `(font-latex-sectioning-2-face ((t (:family "{{ emacsfont }}"))))
+   `(font-latex-sectioning-3-face ((t (:family "{{ emacsfont }}"))))
+   `(font-latex-sectioning-4-face ((t (:family "{{ emacsfont }}"))))
+   `(font-latex-sectioning-5-face ((t (:family "{{ emacsfont }}"))))
    `(font-latex-warning-face ((t (:foreground "#FF0000"))))
 
    ;; Markdown
